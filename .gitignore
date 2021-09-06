@@ -2,5 +2,5 @@
 */.DS_Store
 */*/.DS_Store
 
-public/css/screen.css
-public/css/screen.css.map
+src/public/css/screen.css
+src/public/css/screen.css.map
