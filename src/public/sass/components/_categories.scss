@@ -24,6 +24,10 @@
   padding: 1rem;
   border-radius: 5px;
   min-width: 33%;
+  &:hover {
+    background-color: $bcg-color-med;
+    color: white;
+  }
 }
 
 .cat-card-header {
@@ -70,5 +74,11 @@
         font-size: 0.8rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .c-main-categories {
+    width: 100%;
   }
 }

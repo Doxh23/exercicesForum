@@ -26,7 +26,7 @@
                     <div class="category__container d-flex">
                         <div class="category__cards">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card mb-3">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -54,7 +54,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -81,7 +81,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -108,7 +108,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -135,7 +135,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -171,7 +171,7 @@
                     <div class="category__container d-flex">
                         <div class="category__cards">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card mb-3">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -199,7 +199,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -235,7 +235,7 @@
                     <div class="category__container d-flex">
                         <div class="category__cards">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card mb-3">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">
@@ -262,7 +262,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                                     <div class="cat-card">
                                         <div class="cat-card-header">
                                             <div class="cat-card-img">

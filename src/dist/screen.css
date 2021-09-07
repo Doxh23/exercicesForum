@@ -11132,10 +11132,20 @@ body {
   background-color: #bdbdbc;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    margin: -2rem 1rem 0 1rem;
+  }
+}
 aside {
   width: 25%;
 }
 
+@media screen and (max-width: 750px) {
+  aside {
+    display: none;
+  }
+}
 footer {
   height: 20vh;
   background-color: green;
@@ -11168,6 +11178,10 @@ footer {
   padding: 1rem;
   border-radius: 5px;
   min-width: 33%;
+}
+.cat-card:hover {
+  background-color: #bdbdbc;
+  color: white;
 }
 
 .cat-card-header {
@@ -11215,6 +11229,11 @@ footer {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 750px) {
+  .c-main-categories {
+    width: 100%;
+  }
+}
 .c-aside-search {
   margin: 1rem;
 }
@@ -11264,6 +11283,17 @@ footer {
   background-color: white;
   padding: 1rem;
   margin: 1rem 0;
+  border-radius: 5px;
+}
+.latestPosts:hover {
+  background-color: #bdbdbc;
+  color: white;
+}
+.latestPosts:hover p {
+  color: white;
+}
+.latestPosts:hover span {
+  color: white;
 }
 .latestPosts:first-of-type {
   margin: 0rem 0 1rem 0;
