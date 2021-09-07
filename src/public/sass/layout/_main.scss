@@ -1,0 +1,13 @@
+main {
+  max-width: 1400px;
+  margin: -2rem auto 0 auto;
+  background-color: $bcg-color-light;
+  border-radius: 6px;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+body {
+  background-color: $bcg-color-med;
+}

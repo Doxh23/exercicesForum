@@ -4,3 +4,5 @@
 
 src/public/css/screen.css
 src/public/css/screen.css.map
+src/public/sass/screen.scss
+node_modules
