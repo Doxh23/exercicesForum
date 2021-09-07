@@ -1,5 +1,5 @@
 .c-main-categories {
-  width: 70%;
+  width: 75%;
   padding: 1rem;
   color: $font-color-dark;
 }
@@ -7,11 +7,12 @@
 .category__container {
   background-color: $bcg-color-contrast;
   border-radius: 5px;
+  padding: 1rem;
 }
 
 .category {
   & > h1 {
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 1rem 1rem 1rem;
     font-size: 1.8rem;
     font-weight: 600;
   }

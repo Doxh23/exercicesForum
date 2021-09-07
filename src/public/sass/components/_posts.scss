@@ -1,0 +1,47 @@
+.c-aside-posts {
+  padding: 1rem;
+  color: $font-color-dark;
+  .card {
+    border-radius: 15px;
+  }
+  .card-body {
+    background-color: $bcg-color-contrast;
+  }
+}
+
+.latestPosts {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  &:first-of-type {
+    margin: 0rem 0 1rem 0;
+  }
+  .latest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+  }
+  .latestTime {
+    font-size: 0.9rem;
+    color: $font-color-med;
+    font-style: italic;
+  }
+  p {
+    color: $font-color-med;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .tags {
+    color: $font-color-med;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}
