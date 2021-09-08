@@ -3,9 +3,14 @@
   color: $font-color-dark;
   .card {
     border-radius: 15px;
+    .card-header {
+      border-radius: 15px 15px 0 0;
+    }
   }
+
   .card-body {
     background-color: $bcg-color-contrast;
+    border-radius: 0 0 15px 15px;
   }
 }
 
