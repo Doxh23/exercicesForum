@@ -1,7 +1,3 @@
-<?php
-    require_once '../app/index.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <h1>je suis la page que tu cherches jeune padawan
+    </h1>
 </body>
 </html>
