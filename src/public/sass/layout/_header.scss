@@ -1,0 +1,70 @@
+@import '../abstract/variables';
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.title h1{
+    color: $main-color;
+    text-align: center;
+    font-size: 5.5rem;
+}
+
+.btn-login{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.btn-light{
+    cursor: pointer;
+    color: $main-color;
+    display: flex;
+    align-items: top;
+}
+
+.bi{
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+header button{
+    margin-right: 10px;
+}
+
+.gradient-custom-header {
+    /* fallback for old browsers */
+    background: $bg-gradient-uni;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: $bg-gradient-old;
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $bg-gradient-new,
+    
+    url('../images/testBg1.png');
+    background-size: cover;
+    padding: 7rem 0;
+}
+
+.btn-link{
+    color: $btn-link-color;
+    text-decoration: none;
+    padding: 0;
+}
+.btn-link:hover{
+    color: $btn-link-color-hover;
+}
+@media screen and (max-width: 500px){
+    .btn-login{
+        margin-right: 1.5rem;
+        margin-bottom: 3rem
+    }
+    .gradient-custom-header{
+        padding: 4rem 0 7rem;
+    }
+}
