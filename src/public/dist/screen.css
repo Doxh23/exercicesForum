@@ -3362,7 +3362,7 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #fff;
   text-decoration: underline;
 }
 .btn-link:hover {
@@ -11112,11 +11112,74 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header {
-  height: 20vh;
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 }
 
+.title h1, .title .h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 5.5rem;
+}
+
+.btn-login {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.btn-light {
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: top;
+}
+
+.bi {
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+header button {
+  margin-right: 10px;
+}
+
+.gradient-custom-header {
+  /* fallback for old browsers */
+  background: #859bff;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background-size: cover;
+  padding: 7rem 0;
+}
+
+.btn-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+}
+
+.btn-link:hover {
+  color: #cb80ce;
+}
+
+@media screen and (max-width: 500px) {
+  .btn-login {
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .gradient-custom-header {
+    padding: 4rem 0 7rem;
+  }
+}
 main {
   max-width: 1400px;
   margin: -2rem auto 0 auto;
@@ -11147,11 +11210,195 @@ aside {
   }
 }
 footer {
-  height: 20vh;
-  background-color: green;
-  z-index: 1;
-  margin: -2rem 0 0 0;
+  margin-top: -2rem;
   position: relative;
+  z-index: 9;
+}
+
+.gradient-custom-footer {
+  /* fallback for old browsers */
+  background: #859bff;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #859bff, #452b5f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #859bff, #452b5f);
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 5rem 0 2.5rem;
+}
+
+.social {
+  color: #fff;
+  border: 2px solid #fff;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+}
+
+.social:hover {
+  color: #cb80ce;
+  border-color: #cb80ce;
+}
+
+.foot-info {
+  background-color: #2c2c2c;
+}
+
+.nav-footer {
+  padding: 1rem;
+}
+
+.nav-breadcrumb {
+  color: #cb80ce;
+  text-decoration: none;
+}
+
+.nav-breadcrumb:hover {
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: #b8b8b8;
+}
+
+.credit-foot {
+  background-color: #000;
+  padding: 1rem 0.5rem;
+}
+
+.credits {
+  margin: 0;
+  color: #b8b8b8;
+  margin-left: 0.2rem;
+}
+
+.credits a {
+  text-decoration: none;
+  color: #cb80ce;
+}
+
+.credits a:hover {
+  color: #fff;
+}
+
+ol {
+  margin-bottom: 0;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #b8b8b8;
+}
+
+.time {
+  margin-bottom: 0;
+  color: #b8b8b8;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.foot-contact {
+  text-decoration: none;
+  color: #cb80ce;
+  margin: 0 0.5rem;
+}
+
+.foot-contact:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+  #list-foot {
+    flex-flow: column;
+  }
+
+  .foot-contact {
+    margin: 0.3rem 0.5rem;
+  }
+}
+.c-aside-activeUsers {
+  padding: 1rem;
+  color: #686867;
+}
+.c-aside-activeUsers .card {
+  border-radius: 15px;
+}
+.c-aside-activeUsers .card-body {
+  background-color: #fafafa;
+}
+
+.user {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.user img {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 100px;
+}
+.user .user-img-status {
+  position: relative;
+  width: 100%;
+}
+.user .statusActive {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: green;
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+.user .statusAbsent {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: orange;
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+.user .statusOqp {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+.user .statusOffLine {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: grey;
+  position: absolute;
+  bottom: 7.5px;
+  right: 7.5px;
+}
+.user .user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user .user-info .username {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.user .user-info .user-about {
+  font-size: 0.8rem;
+  font-weight: 200;
 }
 
 .c-main-categories {
@@ -11234,10 +11481,6 @@ footer {
     width: 100%;
   }
 }
-.c-aside-search {
-  margin: 1rem;
-}
-
 .c-aside-login {
   margin: 2rem 1rem 1rem 1rem;
   border-top: 2px solid black;
@@ -11275,8 +11518,12 @@ footer {
 .c-aside-posts .card {
   border-radius: 15px;
 }
+.c-aside-posts .card .card-header {
+  border-radius: 15px 15px 0 0;
+}
 .c-aside-posts .card-body {
   background-color: #fafafa;
+  border-radius: 0 0 15px 15px;
 }
 
 .latestPosts {
@@ -11327,84 +11574,8 @@ footer {
   font-style: italic;
 }
 
-.c-aside-activeUsers {
-  padding: 1rem;
-  color: #686867;
-}
-.c-aside-activeUsers .card {
-  border-radius: 15px;
-}
-.c-aside-activeUsers .card-body {
-  background-color: #fafafa;
-}
-
-.user {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0.5rem;
-}
-.user img {
-  width: 100%;
-  background-color: #fafafa;
-  border-radius: 100px;
-}
-.user .user-img-status {
-  position: relative;
-  width: 100%;
-}
-.user .statusActive {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  background-color: green;
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-}
-.user .statusAbsent {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  background-color: orange;
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-}
-.user .statusOqp {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  background-color: red;
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-}
-.user .statusOffLine {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-  background-color: grey;
-  position: absolute;
-  bottom: 7.5px;
-  right: 7.5px;
-}
-.user .user-info {
-  display: flex;
-  flex-direction: column;
-}
-.user .user-info .username {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-.user .user-info .user-about {
-  font-size: 0.8rem;
-  font-weight: 200;
+.c-aside-search {
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=screen.css.map */
