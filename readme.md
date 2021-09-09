@@ -1,15 +1,12 @@
-# 🚀 Welcome to your new awesome project!
+# forum
+Project about making a form, to get used to database interaction, php MVC logic, bootstrap, sass, html.
+## hamilton@5.32 - BeCode
 
-This project has been created using **webpack-cli**, you can now run
+### made with *love* By : Adrien, Audric, Baysaa, Julien
 
-```
-npm run build
-```
+## How does it work ?
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+### RTU
+- Download, 
+- link your DB
+- enjoy
