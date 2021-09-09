@@ -13,9 +13,9 @@ class Pages extends Controller {
     }
     public function categories() {
         $data = [
-            'title' => 'category Page'
+            'title' => 'Category Page'
         ];
 
-        $this->view('categories', $data);
+        $this->view('pages/categories', $data);
     }
 }
