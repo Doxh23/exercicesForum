@@ -24,141 +24,135 @@
                 <div class="category">
                     <h1>category one</h1>
                     <div class="category__container d-flex">
-                        <div class="category__cards">
-                            <div class="row">
-                                <?php 
-                                    $cat1 = new Categories;
-                                    $cat1->setCategories(0);
-                                ?>
-                            </div>
+                        <div class="row w-100">
+                            <?php 
+                                $cat1 = new Categories;
+                                $cat1->setCategories(0);
+                            ?>
                         </div>   
                     </div>
                 </div>
                 <div class="category">
                     <h1>category two</h1>
                     <div class="category__container d-flex">
-                        <div class="category__cards">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                                    <div class="cat-card mb-3">
-                                        <div class="cat-card-header">
-                                            <div class="cat-card-img">
-                                                <img src="https://robohash.org/random" alt="">
-                                            </div>
-                                            <div class="cat-card-text">
-                                                <h1>coucou</h1>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </div>
+                        <div class="row w-100">
+                            <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                                <div class="cat-card mb-3">
+                                    <div class="cat-card-header">
+                                        <div class="cat-card-img">
+                                            <img src="https://robohash.org/random" alt="">
                                         </div>
-                                        <div class="cat-card-main d-flex">
-                                            <div class="nTopics">
-                                                <span class="number">459</span>
-                                                <span class="type">Topics</span>
-                                            </div>
-                                            <div class="nPosts">
-                                                <span class="number">900</span>
-                                                <span class="type">Posts</span>
-                                            </div>
-                                            <div class="lastPost">
-                                                <span class="date">date</span>
-                                                <span class="type">last Post</span>
-                                            </div>
+                                        <div class="cat-card-text">
+                                            <h1>coucou</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
                                     </div>
-                                    
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                                    <div class="cat-card">
-                                        <div class="cat-card-header">
-                                            <div class="cat-card-img">
-                                                <img src="https://robohash.org/random" alt="">
-                                            </div>
-                                            <div class="cat-card-text">
-                                                <h1>coucou</h1>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </div>
+                                    <div class="cat-card-main d-flex">
+                                        <div class="nTopics">
+                                            <span class="number">459</span>
+                                            <span class="type">Topics</span>
                                         </div>
-                                        <div class="cat-card-main d-flex">
-                                            <div class="nTopics">
-                                                <span class="number">459</span>
-                                                <span class="type">Topics</span>
-                                            </div>
-                                            <div class="nPosts">
-                                                <span class="number">900</span>
-                                                <span class="type">Posts</span>
-                                            </div>
-                                            <div class="lastPost">
-                                                <span class="date">date</span>
-                                                <span class="type">last Post</span>
-                                            </div>
+                                        <div class="nPosts">
+                                            <span class="number">900</span>
+                                            <span class="type">Posts</span>
+                                        </div>
+                                        <div class="lastPost">
+                                            <span class="date">date</span>
+                                            <span class="type">last Post</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                                <div class="cat-card">
+                                    <div class="cat-card-header">
+                                        <div class="cat-card-img">
+                                            <img src="https://robohash.org/random" alt="">
+                                        </div>
+                                        <div class="cat-card-text">
+                                            <h1>coucou</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cat-card-main d-flex">
+                                        <div class="nTopics">
+                                            <span class="number">459</span>
+                                            <span class="type">Topics</span>
+                                        </div>
+                                        <div class="nPosts">
+                                            <span class="number">900</span>
+                                            <span class="type">Posts</span>
+                                        </div>
+                                        <div class="lastPost">
+                                            <span class="date">date</span>
+                                            <span class="type">last Post</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>   
-                    </div>
+                        </div>
+                    </div>   
                 </div>
                 <div class="category">
                     <h1>category three</h1>
                     <div class="category__container d-flex">
-                        <div class="category__cards">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                                    <div class="cat-card mb-3">
-                                        <div class="cat-card-header">
-                                            <div class="cat-card-img">
-                                                <img src="https://robohash.org/random" alt="">
-                                            </div>
-                                            <div class="cat-card-text">
-                                                <h1>coucou</h1>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </div>
+                        <div class="row w-100">
+                            <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                                <div class="cat-card mb-3">
+                                    <div class="cat-card-header">
+                                        <div class="cat-card-img">
+                                            <img src="https://robohash.org/random" alt="">
                                         </div>
-                                        <div class="cat-card-main d-flex">
-                                            <div class="nTopics">
-                                                <span class="number">459</span>
-                                                <span class="type">Topics</span>
-                                            </div>
-                                            <div class="nPosts">
-                                                <span class="number">900</span>
-                                                <span class="type">Posts</span>
-                                            </div>
-                                            <div class="lastPost">
-                                                <span class="date">date</span>
-                                                <span class="type">last Post</span>
-                                            </div>
+                                        <div class="cat-card-text">
+                                            <h1>coucou</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                                    <div class="cat-card">
-                                        <div class="cat-card-header">
-                                            <div class="cat-card-img">
-                                                <img src="https://robohash.org/random" alt="">
-                                            </div>
-                                            <div class="cat-card-text">
-                                                <h1>coucou</h1>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                            </div>
+                                    <div class="cat-card-main d-flex">
+                                        <div class="nTopics">
+                                            <span class="number">459</span>
+                                            <span class="type">Topics</span>
                                         </div>
-                                        <div class="cat-card-main d-flex">
-                                            <div class="nTopics">
-                                                <span class="number">459</span>
-                                                <span class="type">Topics</span>
-                                            </div>
-                                            <div class="nPosts">
-                                                <span class="number">900</span>
-                                                <span class="type">Posts</span>
-                                            </div>
-                                            <div class="lastPost">
-                                                <span class="date">date</span>
-                                                <span class="type">last Post</span>
-                                            </div>
+                                        <div class="nPosts">
+                                            <span class="number">900</span>
+                                            <span class="type">Posts</span>
+                                        </div>
+                                        <div class="lastPost">
+                                            <span class="date">date</span>
+                                            <span class="type">last Post</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>   
+                            <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                                <div class="cat-card">
+                                    <div class="cat-card-header">
+                                        <div class="cat-card-img">
+                                            <img src="https://robohash.org/random" alt="">
+                                        </div>
+                                        <div class="cat-card-text">
+                                            <h1>coucou</h1>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="cat-card-main d-flex">
+                                        <div class="nTopics">
+                                            <span class="number">459</span>
+                                            <span class="type">Topics</span>
+                                        </div>
+                                        <div class="nPosts">
+                                            <span class="number">900</span>
+                                            <span class="type">Posts</span>
+                                        </div>
+                                        <div class="lastPost">
+                                            <span class="date">date</span>
+                                            <span class="type">last Post</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

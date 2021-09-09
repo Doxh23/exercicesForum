@@ -11233,13 +11233,6 @@ ol {
     margin: 0.3rem 0.5rem;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-}
-
 .title h1, .title .h1 {
   color: #fff;
   text-align: center;
@@ -11401,86 +11394,6 @@ body {
   font-weight: 200;
 }
 
-.c-main-categories {
-  width: 75%;
-  padding: 1rem;
-  color: #686867;
-}
-
-.category__container {
-  background-color: #fafafa;
-  border-radius: 5px;
-  padding: 1rem;
-}
-
-.category > h1, .category > .h1 {
-  margin: 2rem 1rem 1rem 1rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.cat-card {
-  background-color: #fff;
-  border: 2px solid #f8f7f7;
-  padding: 1rem;
-  border-radius: 5px;
-  min-width: 33%;
-}
-.cat-card:hover {
-  background-color: #bdbdbc;
-  color: white;
-}
-
-.cat-card-header {
-  display: flex;
-  flex-direction: row;
-}
-.cat-card-header img {
-  border-radius: 100px;
-  background-color: white;
-  width: 3rem;
-}
-.cat-card-header h1, .cat-card-header .h1 {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.cat-card-header p {
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: #e4e3e3;
-}
-
-.cat-card-img {
-  border-bottom: 3px solid black;
-  margin: 0.5rem 1rem 2rem 0;
-  padding-bottom: 2rem;
-}
-
-.cat-card-main {
-  justify-content: space-between;
-}
-.cat-card-main div {
-  display: flex;
-  flex-direction: column;
-  line-height: 1rem;
-}
-.cat-card-main div span:first-of-type {
-  color: #686867;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-.cat-card-main div span:nth-of-type(2) {
-  color: #bdbdbc;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-@media screen and (max-width: 750px) {
-  .c-main-categories {
-    width: 100%;
-  }
-}
 .c-aside-login {
   margin: 2rem 1rem 1rem 1rem;
   border-top: 2px solid black;
@@ -11576,6 +11489,87 @@ body {
 
 .c-aside-search {
   margin: 1rem;
+}
+
+.c-main-categories {
+  width: 75%;
+  padding: 1rem;
+  color: #686867;
+}
+
+.category__container {
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.category > h1, .category > .h1 {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cat-card {
+  background-color: #fff;
+  border: 2px solid #f8f7f7;
+  padding: 1rem;
+  border-radius: 5px;
+  min-width: 33%;
+}
+.cat-card:hover {
+  background-color: #bdbdbc;
+  color: white;
+}
+
+.cat-card-header {
+  display: flex;
+  flex-direction: row;
+}
+.cat-card-header img {
+  border-radius: 100px;
+  background-color: white;
+  width: 3rem;
+}
+.cat-card-header h1, .cat-card-header .h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.cat-card-header p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #e4e3e3;
+}
+
+.cat-card-img {
+  border-bottom: 3px solid black;
+  margin: 0.5rem 1rem 2rem 0;
+  padding-bottom: 2rem;
+}
+
+.cat-card-main {
+  justify-content: space-between;
+}
+.cat-card-main div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
+}
+.cat-card-main div span:first-of-type {
+  color: #686867;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.cat-card-main div span:nth-of-type(2) {
+  color: #bdbdbc;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 750px) {
+  .c-main-categories {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
