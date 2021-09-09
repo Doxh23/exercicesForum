@@ -1,0 +1,31 @@
+.c-aside-login {
+  margin: 2rem 1rem 1rem 1rem;
+  border-top: 2px solid black;
+  padding-top: 1rem;
+  .msg-info {
+    justify-content: space-between;
+  }
+  .btn-hide {
+    button {
+      padding: 0.25rem 0.75rem;
+      font-weight: 800;
+      border: none;
+      background-color: transparent;
+      border-radius: 5px;
+      color: $font-color-dark;
+      &:hover {
+        background-color: $bcg-color-med;
+      }
+    }
+  }
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+  }
+}
+
+.activeButton {
+  background-color: black;
+  color: white;
+}
