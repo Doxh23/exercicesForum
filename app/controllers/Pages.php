@@ -18,4 +18,16 @@ class Pages extends Controller {
 
         $this->view('pages/categories', $data);
     }
+    public function topics(){
+        $data = [
+            'title' => 'Topics pages'
+        ];
+        $this->view('pages/topics', $data);
+    }
+    public function messages(){
+        $data = [
+            'title' => 'Messages pages'
+        ];
+        $this->view('pages/messages', $data);
+    }
 }
