@@ -15,14 +15,33 @@
             return $result;
         }
 
-        public function setMessages($topics_Id, $user_id){
-            $this->db->query("");
-            $result = $this->db->resultSet();
-            print_r($result);
+        public function setMessages(){
+            $this->db->query("  SELECT * FROM messages
+                                JOIN users
+                                ON messages.author_id = users.id
+                                JOIN topics
+                                ON messages.topic_id = topics.id
+                                WHERE topics.id = 0");
 
+            $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
                 $arrayOfResult = (array)$result[$a];
-                $template = '<p>' . $arrayOfResult['id'] . '</p> <p>' . $arrayOfResult['title'] . '</p> <p>' . $arrayOfResult['creation_date'] . '</p> <p>' . $arrayOfResult['author_id'] . '</p> <p>' . $arrayOfResult['board_id'] . '</p> <p>' . $arrayOfResult['msg_id'] . '</p>';
+                $template =
+                            '<div class="row content-comments">
+                                <div class="col-4 autor-comments">
+                                    <img src="" alt="" class="avatar">
+                                    <p class="pseudo">' . $arrayOfResult['nickname'] . '</p>
+                                    <p class="role">name 2</p>
+                                    <p class="post">post</p>
+                                    <p class="location">location</p>
+                                </div>
+                                <div class="col-8 ">
+                                    <p class="date">' . $arrayOfResult['creation_date'] . '</p>
+                                    <p class="text-comment">' . $arrayOfResult['content'] . '</p>
+                                    <hr>
+                                    <p>' . $arrayOfResult['signature'] . '</p>
+                                </div>
+                            </div>';
                 echo $template;
         }
     }
