@@ -11596,6 +11596,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #bdbdbc;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 15px;
 }
 .comments-main .button-bot {
   margin-top: 15px;
@@ -11708,12 +11712,13 @@ body {
 }
 .comments-main .content-comments {
   background-color: white;
-  border: 6px solid;
-  border: 6px solid #f3eeee;
   border-radius: 10px;
   height: 250px;
-  margin-left: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
+}
+.comments-main .content-comments:last-child {
+  margin-bottom: 0;
 }
 .comments-main .return {
   margin-top: 15px;
