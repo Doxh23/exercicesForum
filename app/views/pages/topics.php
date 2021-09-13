@@ -184,7 +184,6 @@
                                 <div class="articles__container">
                                     <?php 
                                         $topics->setTopics(0);
-                                        $topics->getNumberOfMessages(0)
                                     ?>
                                 </div>
                             </div>

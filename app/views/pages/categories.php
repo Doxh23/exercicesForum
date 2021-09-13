@@ -1,5 +1,7 @@
-<?php 
+<?php
     require ('../app/models/Categories.php');
+    echo $_SESSION["username"];
+    echo $_SESSION["mail"];
 ?>
 <!DOCTYPE html>
 <html lang="en">

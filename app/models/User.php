@@ -46,10 +46,17 @@
             $this->$psw = $psw;
             $con = $this->getConnexion($username,$psw);
             if ($con){
+                $_SESSION["username"]=$username;
                 header('Location: ../../pages/categories'); 
                 exit;
             } else {
                 echo 'problem problem problem';
             }
+        }
+
+        public function destroySession(){
+            session_destroy();
+            header('Location: ../../pages/categories'); 
+            return 'categories';
         }
     }

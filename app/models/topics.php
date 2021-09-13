@@ -40,6 +40,7 @@
             $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
                 $arrayOfResult = (array)$result[$a];
+                print_r($arrayOfResult);
                 $template = 
                 '<article class="section__article row row-cols-5">
                     <div class="col-1 col-sm-1">

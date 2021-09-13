@@ -49,4 +49,11 @@ class Pages extends Controller {
 
         $this->view('users/register', $data);
     }
+    public function destroy() {
+        $data = [
+            'title' => 'Destroy Page'
+        ];
+
+        $this->view('../app/models/destroy', $data);
+    }
 }
