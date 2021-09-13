@@ -1,0 +1,52 @@
+.searchbar {
+    .searchform {
+        display:flex;
+    }
+    .search-forum {
+        background-color: #cec9c9;
+        border: 1px solid #b1a8a8;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        height: 30px;
+        width: 200px;
+    };
+    .search-lens{
+        height: 30px;
+        background-color: #cec9c9;
+        border: 1px solid #b1a8a8;
+        text-align: center;
+        width: 40px;
+    }
+
+    .search-conf{
+        height: 30px;
+        width: 40px;
+        background-color: #cec9c9;
+        border: 1px solid #b1a8a8;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+}
+
+
+.toolbar__count {
+    text-align: end;
+}
+
+.toolbar__sort{
+    .sort__options{
+        border-radius: 15px;
+        background-color: #e9e7e7;
+        width: 100px;
+    };
+
+}
+
+.toolbar__jump{
+    .jump__options{
+        border-radius: 15px;
+        background-color: #e9e7e7;
+        width: 100px;
+    };
+}

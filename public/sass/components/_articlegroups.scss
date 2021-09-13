@@ -1,0 +1,36 @@
+@import "../abstract/variables";
+
+.section__header {
+    background: linear-gradient(90deg, $gradientColor1, $gradientColor2);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color:$negativeColor;
+    font-size: $fontSize;
+    padding-right:1rem;
+    padding-left:1rem;
+    margin-top:1rem;
+
+    .header_elements {
+        align-items: center;
+    }
+}
+
+.section__body {
+    background-color: #bdbdbc;
+    padding:1rem;
+    
+    margin-bottom:1rem;
+
+
+}
+
+.articles__container {
+    display:flex;
+    flex-direction: column;
+}
+
+.section__article {
+    background-color: white;
+    border: 1px #bdbdbc solid;
+
+}
