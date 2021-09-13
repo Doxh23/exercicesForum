@@ -1,7 +1,7 @@
 <?php
 class Pages extends Controller {
     public function __construct() {
-        //$this->userModel = $this->model('User');
+        $this->userModel = $this->model('User');
     }
 
     public function index() {
@@ -29,5 +29,24 @@ class Pages extends Controller {
             'title' => 'Messages pages'
         ];
         $this->view('pages/messages', $data);
+    }
+    public function login() {
+        $data = [
+            'title' => 'Login page',
+            'userName' => '',
+            'psw' => ''
+        ];
+
+        $this->view('users/login', $data);
+    }
+    public function register() {
+        $data = [
+            'title' => 'register page',
+            'userNameError' => '',
+            'pswError' => '',
+            'mailError' => ''
+        ];
+
+        $this->view('users/register', $data);
     }
 }
