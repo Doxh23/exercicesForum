@@ -1,5 +1,5 @@
 @import 'base/bootstrap.scss';
-@import "abstract/variables";
+@import 'abstract/variables';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/mainAdr';
@@ -11,8 +11,8 @@
 @import 'components/search';
 @import 'components/categories';
 @import 'components/rules';
-@import "components/toolbar";
-@import "components/articlegroups";
-@import "components/buttons"; 
+@import 'components/toolbar';
+@import 'components/articlegroups';
+@import 'components/buttons';
 @import 'layout/mainAdr';
 @import 'components/loginPage';

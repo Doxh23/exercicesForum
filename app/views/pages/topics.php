@@ -1,9 +1,7 @@
 <?php 
     require_once('../app/models/topics.php');
-
+    error_reporting(0);
     $topics = new Topics();
-    $topics->getBoard();
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +17,6 @@
     <?php require ('../app/views/includes/header.php');?>
     <main class="layout__main">
             <div class=" main__row row">
-
                 <div class="main__containerLeft col-lg-9">
                     <div class="container">
                         <div class="components__breadcrumb row">
@@ -185,46 +182,10 @@
 
                             <div class="section__body">
                                 <div class="articles__container">
-                                    <article class="section__article row row-cols-5">
-                                        <div class="col-1 col-sm-1">
-                                            <img class="article__status" src="" alt="STATUS">
-                                        </div>
-                                        <div class="article__description col-6 col-sm-6 ">
-                                            <h3 class="description__title">
-                                                $articleTitle
-                                            </h3>
-                                            <div class="description__authorAndGroup row">
-                                                <p class="description__author col-sm">
-                                                    by $articleAuthor
-                                                </p>
-                                                <p class="description__group col-sm">
-                                                    in $articleGroup
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-1 col-sm-1">
-                                            <p class="article__commentsCount">
-                                                <!-- $articleCommentsCount -->
-                                                $
-                                            </p>
-                                        </div>
-                                        <div class="col-1 col-sm-1">
-                                            <p class="article__viewsCount">
-                                                <!-- $articleViewsCount -->
-                                                $
-                                            </p>
-                                        </div>
-                                        <div class="col-3 col-sm">
-                                            <div class="article__authorAndDate">
-                                                <p class="article__author">
-                                                    by $articleAuthor
-                                                </p>
-                                                <p class="article__date">
-                                                    in $articleDate
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </article>
+                                    <?php 
+                                        $topics->setTopics(0);
+                                        $topics->getNumberOfMessages(0)
+                                    ?>
                                 </div>
                             </div>
 
@@ -424,7 +385,6 @@
             
             </div>
     </main>
-    
     <?php require ('../app/views/includes/footer.php');?>
 </body>
 </html>
