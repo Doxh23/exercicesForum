@@ -1,0 +1,7 @@
+@import "../abstract/variables";
+
+.button {
+    background-color: $gradientColor1;
+    border-radius:10px;
+    color:$negativeColor;
+}
