@@ -11123,7 +11123,8 @@ textarea.form-control-lg {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 3rem;
+  padding: 0 0 5rem 0;
+  align-self: flex-end;
 }
 
 .btn-light {
@@ -11150,7 +11151,12 @@ header button {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
   background-size: cover;
-  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
 .btn-link {
@@ -11161,6 +11167,15 @@ header button {
 
 .btn-link:hover {
   color: #cb80ce;
+}
+
+.btn-logout {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 5rem 0;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 500px) {
@@ -12077,6 +12092,11 @@ form a:hover {
 }
 form input {
   margin: 1rem 0;
+}
+
+a.redirect:link, a.redirect:hover, a.redirect:focus, a.redirect:visited {
+  text-decoration: none !important;
+  width: 33%;
 }
 
 /*# sourceMappingURL=screenTest.css.map */

@@ -11123,8 +11123,49 @@ textarea.form-control-lg {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 0 5rem 0;
   align-self: flex-end;
+  margin-right: 3rem;
+}
+
+.btn-register {
+  margin-right: 10px;
+}
+
+.btn-login .bi {
+  margin: 0 3px 3px 0;
+}
+
+.btn-logout {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  margin-right: 3rem;
+}
+
+.btn-logout span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.form-logout {
+  padding: 0;
+  margin: 0;
+}
+
+.input-logout {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.svg {
+  cursor: default;
+}
+
+.logout {
+  cursor: default;
 }
 
 .btn-light {
@@ -11132,11 +11173,6 @@ textarea.form-control-lg {
   color: #fff;
   display: flex;
   align-items: top;
-}
-
-.bi {
-  margin-right: 3px;
-  margin-bottom: 3px;
 }
 
 header button {
@@ -11155,8 +11191,7 @@ header button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 3rem 0 4rem 0;
 }
 
 .btn-link {
@@ -11169,18 +11204,14 @@ header button {
   color: #cb80ce;
 }
 
-.btn-logout {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 0 5rem 0;
-  align-self: flex-end;
-}
-
 @media screen and (max-width: 500px) {
   .btn-login {
     margin-right: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn-logout {
+    margin-right: 0.5rem;
     margin-bottom: 3rem;
   }
 
@@ -12092,6 +12123,10 @@ form a:hover {
 }
 form input {
   margin: 1rem 0;
+}
+
+a.redirect:link, a.redirect:hover, a.redirect:focus, a.redirect:visited {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=screen.css.map */

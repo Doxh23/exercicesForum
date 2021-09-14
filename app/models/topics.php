@@ -14,11 +14,16 @@
             print_r($result);
             return $result;
         }
-        public function getBoard(){
-            $boardID = $_GET['id'];
-            $boardID2 = $_GET['name'];
-            echo $boardID;
-            echo $boardID2;
+        static function getCategoryId(){
+            return $_GET['category'];
+        }
+
+        static function getTopicId(){
+            return  $_GET['topic'];
+        }
+
+        static function getBoardId(){
+            return  $_GET['board'];
         }
 
         public function getNumberOfMessages($topicID){
@@ -28,7 +33,11 @@
             print_r($result);
         }
 
-        public function setTopics($boards_Id){
+        public function setTopics(){
+            $categoryID = Topics::getCategoryId();
+            $boardID = Topics::getBoardId();
+            echo $categoryID;
+            echo $boardID;
             $this->db->query(  "SELECT * FROM `topics`
                                 JOIN boards 
                                 ON boards.id = topics.board_id
@@ -36,7 +45,8 @@
                                 ON users.id = topics.author_id
                                 JOIN messages
                                 ON messages.id = topics.msg_id
-                                WHERE boards.id = $boards_Id");
+                                WHERE boards.category = $categoryID
+                                AND topics.board_id = $boardID");
             $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
                 $arrayOfResult = (array)$result[$a];
@@ -86,3 +96,12 @@
         }
     }
 }
+
+
+'<form action="" method="" get"">
+    <label for=""note""> </label> <br>
+    <input name=""pseudo"" value="'.$arrayOfResult["nickname"]. ' '.'"type=""> <br>
+    <input name=""password"" type=""password"" value="'.$arrayOfResult["password"].'" type=""> <br>
+    <input name=""signature"" value="'.$arrayOfResult["signature"].'" type=""> <br>
+    <input type=""submit"" name=""submit"" value=""click me to send"">
+</form>';
