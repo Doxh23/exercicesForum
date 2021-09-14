@@ -53,10 +53,4 @@
                 echo 'problem problem problem';
             }
         }
-
-        public function destroySession(){
-            session_destroy();
-            header('Location: ../../pages/categories'); 
-            return 'categories';
-        }
     }
