@@ -5,6 +5,10 @@
             if (!empty($_SESSION["username"])){
                 echo '<div class="btn-logout">
                 <span>Hello '.$_SESSION["username"].'</span>
+                <span> '.$_SESSION["id"].'</span>
+                <span> '.$_SESSION["email"].'</span>
+                <span> '.$_SESSION["signature"].'</span>
+                <span> '.$_SESSION["avatar"].'</span>
                 <form class="form-logout" action="../users/destroy" method="POST">
                     <div class="logout btn btn-link">
                         <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">

@@ -16,24 +16,21 @@
             if (isset($username,$psw)){
                 $this->$username = $username;
                 $this->$psw = $psw;
-                $dbUser =[];
-                $dbPsw =[];
-
+               
                 $DBuser = $this->db->query("SELECT nickname FROM `users` WHERE password='$psw'");
                 $DBuser = $this->db->resultSet();
-
+    
                 $DBpsw = $this->db->query("SELECT password FROM users WHERE nickname='$username'");
                 $DBpsw = $this->db->resultSet();
 
                 foreach($DBuser as  $a => $a_value){
                     $dbUser = (array)$DBuser[$a];
-
                 }
-                foreach($DBpsw as  $a => $a_value){
-                    $dbPsw = (array)$DBpsw[$a];
-
+                foreach($DBpsw as  $b => $b_value){
+                    $dbPsw = (array)$DBpsw[$b];
                 }
-                if ($username === $dbUser['nickname'] && $psw === $dbPsw['password']){
+
+                if ($username === $dbUser['nickname'] && $psw == $dbPsw['password']){
                     return true;
                 } else {
                     return false;
@@ -44,10 +41,45 @@
         public function redirect($username,$psw){
             $this->$username = $username;
             $this->$psw = $psw;
+
+            $dbMail =[];
+            $dbAvatar =[];
+            $dbSignature =[];
+            $dbId =[];
+
+            $DBmail = $this->db->query("SELECT email FROM users WHERE nickname='$username'");
+            $DBmail = $this->db->resultSet();
+
+            $DBavatar = $this->db->query("SELECT avatar FROM users WHERE nickname='$username'");
+            $DBavatar = $this->db->resultSet();
+
+            $DBsignature = $this->db->query("SELECT signature FROM users WHERE nickname='$username'");
+            $DBsignature = $this->db->resultSet();
+
+            $DBid = $this->db->query("SELECT id FROM users WHERE nickname='$username'");
+            $DBid = $this->db->resultSet();
+
+            foreach($DBmail as  $c => $c_value){
+                $dbMail = (array)$DBmail[$c];
+            }
+            foreach($DBavatar as  $d => $d_value){
+                $dbAvatar = (array)$DBavatar[$d];
+            }   
+            foreach($DBsignature as  $e => $e_value){
+                $dbSignature = (array)$DBsignature[$e];
+            }
+            foreach($DBid as  $f => $f_value){
+                $dbId = (array)$DBid[$f];
+            }
             $con = $this->getConnexion($username,$psw);
             if ($con){
+                header('Location: ../../pages/categories');
                 $_SESSION["username"]=$username;
-                header('Location: ../../pages/categories'); 
+                $_SESSION["id"]=$dbId[0];
+                $_SESSION["email"]=$dbMail[0];
+                $_SESSION["avatar"]=$dbAvatar[0];
+                $_SESSION["signature"]=$dbSignature[0];
+                 
                 exit;
             } else {
                 echo 'problem problem problem';

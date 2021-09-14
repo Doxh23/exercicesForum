@@ -12127,6 +12127,7 @@ form input {
 
 a.redirect:link, a.redirect:hover, a.redirect:focus, a.redirect:visited {
   text-decoration: none !important;
+  width: 33%;
 }
 
 /*# sourceMappingURL=screen.css.map */
