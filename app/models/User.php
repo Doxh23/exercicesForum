@@ -75,6 +75,7 @@
             if ($con){
                 header('Location: ../../pages/categories');
                 $_SESSION["username"]=$username;
+                $_SESSION["password"]=$psw;
                 $_SESSION["id"]=$dbId['id'];
                 $_SESSION["email"]=$dbMail['email'];
                 $_SESSION["avatar"]=$dbAvatar['avatar'];

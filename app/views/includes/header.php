@@ -5,6 +5,7 @@
             if (!empty($_SESSION["username"])){
                 echo '<div class="btn-logout">
                 <span>Hello '.$_SESSION["username"].'</span>
+                <span> '.$_SESSION["password"].'</span>
                 <span> '.$_SESSION["id"].'</span>
                 <span> '.$_SESSION["email"].'</span>
                 <span> '.$_SESSION["signature"].'</span>
