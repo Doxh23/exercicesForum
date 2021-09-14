@@ -56,4 +56,11 @@ class Pages extends Controller {
 
         $this->view('../app/models/destroy', $data);
     }
+    public function profil() {
+        $data = [
+            'title' => 'profil page'
+        ];
+
+        $this->view('pages/profil', $data);
+    }
 }
