@@ -37,7 +37,7 @@
         <div class="credit-foot">
             <div class="d-flex flex-wrap">
                 <p class="credits">Powered by <a href="#">phpBB™</a> • </p>
-                <p class="credits">Design by <a href="#">PlanetStyles</a></p>
+                <p class="credits">Design by <a href="#">Mordor4Ever</a></p>
             </div>
         </div>
     </footer>

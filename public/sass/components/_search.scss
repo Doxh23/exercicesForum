@@ -1,3 +1,30 @@
 .c-aside-search {
   margin: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.search-bar-aside{
+  padding-left: 10px;
+  background-color:rgb(206, 201, 201) ;
+  border: 1px solid rgb(177, 168, 168);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 30px;
+  min-width: 80px;
+}
+.aside-cog{
+    height: 30px;
+    width: 40px;
+    background-color:rgb(206, 201, 201) ;
+    border: 1px solid rgb(177, 168, 168);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.btn-search-aside {
+    height: 30px;
+    background-color:rgb(206, 201, 201) ;
+    border: 1px solid rgb(177, 168, 168);
+    text-align: center;
+    width: 40px;
 }

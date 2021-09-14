@@ -268,8 +268,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <aside class="main__containerRight col-lg-3">
+
+                <!-- <aside class="main__containerRight col-lg-3">
                     <section class="c-aside-search">
                         <div class="form-group">
                             <div class="input-group">
@@ -380,9 +380,10 @@
                             </div>
                         </div>
                     </section>
-                </aside>
+                </aside> -->
             
             </div>
+            <?php require ('../app/views/includes/aside.php');?>
     </main>
     <?php require ('../app/views/includes/footer.php');?>
 </body>

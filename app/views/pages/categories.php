@@ -58,7 +58,8 @@
                 </div>
             </div>
         </section>
-        <aside>
+        <?php require ('../app/views/includes/aside.php');?>
+<!-- <aside>
             <section class="c-aside-search">
                 <div class="form-group">
                     <div class="input-group">
@@ -77,7 +78,7 @@
                             <button>-</button>
                         </div>
                     </div>
-                    <form action="<?php echo URLROOT; ?>/users/login" method="POST">
+                    <form action="<//?php echo URLROOT; ?>/users/login" method="POST">
                         <div class="form-group">
                             <label class="form-control-label text-muted" for="username">Username</label>
                             <input type="text" id="username" name="username" placeholder="Phone no or email id" class="form-control rounded-pill">
@@ -181,7 +182,7 @@
                     </div>
                 </div>
             </section>
-        </aside>
+        </aside> -->
     </main>
     <?php require ('../app/views/includes/footer.php');?>
 </body>
