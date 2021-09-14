@@ -183,7 +183,7 @@
                             <div class="section__body">
                                 <div class="articles__container">
                                     <?php 
-                                        $topics->setTopics(0);
+                                        $topics->setTopics();
                                     ?>
                                 </div>
                             </div>
