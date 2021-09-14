@@ -58,7 +58,7 @@
 
             $DBid = $this->db->query("SELECT id FROM users WHERE nickname='$username'");
             $DBid = $this->db->resultSet();
-
+            
             foreach($DBmail as  $c => $c_value){
                 $dbMail = (array)$DBmail[$c];
             }
