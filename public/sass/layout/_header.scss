@@ -11,7 +11,8 @@
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 3rem;
+  padding: 0 0 5rem 0;
+  align-self: flex-end;
 }
 
 .btn-light {
@@ -40,7 +41,12 @@ header button {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: $bg-gradient-new, url('../images/testBg1.png');
   background-size: cover;
-  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  padding: 3rem 1rem 1rem 1rem;
 }
 
 .btn-link {
@@ -51,6 +57,16 @@ header button {
 .btn-link:hover {
   color: $btn-link-color-hover;
 }
+
+.btn-logout {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 5rem 0;
+  align-self: flex-end;
+}
+
 @media screen and (max-width: 500px) {
   .btn-login {
     margin-right: 1.5rem;
