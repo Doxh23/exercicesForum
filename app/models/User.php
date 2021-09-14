@@ -30,7 +30,7 @@
                     $dbPsw = (array)$DBpsw[$b];
                 }
 
-                if ($username === $dbUser['nickname'] && $psw == $dbPsw['password']){
+                if ($username == $dbUser['nickname'] && $psw == $dbPsw['password']){
                     return true;
                 } else {
                     return false;
@@ -75,10 +75,10 @@
             if ($con){
                 header('Location: ../../pages/categories');
                 $_SESSION["username"]=$username;
-                $_SESSION["id"]=$dbId[0];
-                $_SESSION["email"]=$dbMail[0];
-                $_SESSION["avatar"]=$dbAvatar[0];
-                $_SESSION["signature"]=$dbSignature[0];
+                $_SESSION["id"]=$dbId['id'];
+                $_SESSION["email"]=$dbMail['email'];
+                $_SESSION["avatar"]=$dbAvatar['avatar'];
+                $_SESSION["signature"]=$dbSignature['signature'];
                  
                 exit;
             } else {

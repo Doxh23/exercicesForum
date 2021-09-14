@@ -17,7 +17,7 @@
     <?php require ('../app/views/includes/header.php');?>
     <main class="layout__main">
             <div class=" main__row row">
-                <div class="main__containerLeft col-lg-9">
+                <div class="main__containerLeft">
                     <div class="container">
                         <div class="components__breadcrumb row">
                             <nav class="breadcrumb__items ">

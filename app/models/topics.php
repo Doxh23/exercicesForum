@@ -96,12 +96,3 @@
         }
     }
 }
-
-
-'<form action="" method="" get"">
-    <label for=""note""> </label> <br>
-    <input name=""pseudo"" value="'.$arrayOfResult["nickname"]. ' '.'"type=""> <br>
-    <input name=""password"" type=""password"" value="'.$arrayOfResult["password"].'" type=""> <br>
-    <input name=""signature"" value="'.$arrayOfResult["signature"].'" type=""> <br>
-    <input type=""submit"" name=""submit"" value=""click me to send"">
-</form>';
