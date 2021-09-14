@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/screenTest.css">
+    <link rel="stylesheet" href="/public/css/screen.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><?=$data['title']?></title>
 </head>
@@ -58,7 +58,8 @@
                 </div>
             </div>
         </section>
-        <aside>
+        <?php require ('../app/views/includes/aside.php');?>
+<!-- <aside>
             <section class="c-aside-search">
                 <div class="form-group">
                     <div class="input-group">
@@ -77,7 +78,7 @@
                             <button>-</button>
                         </div>
                     </div>
-                    <form action="<?php echo URLROOT; ?>/users/login" method="POST">
+                    <form action="<//?php echo URLROOT; ?>/users/login" method="POST">
                         <div class="form-group">
                             <label class="form-control-label text-muted" for="username">Username</label>
                             <input type="text" id="username" name="username" placeholder="Phone no or email id" class="form-control rounded-pill">
@@ -181,7 +182,7 @@
                     </div>
                 </div>
             </section>
-        </aside>
+        </aside> -->
     </main>
     <?php require ('../app/views/includes/footer.php');?>
 </body>

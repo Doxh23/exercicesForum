@@ -49,6 +49,12 @@ footer {
 .breadcrumb-item.active {
   color: $main-color-foot;
 }
+footer .bi{
+  margin: 0 3px 3px 0;
+}
+footer i{
+  margin-right: 5px;
+}
 .credit-foot {
   background-color: $second-color;
   padding: 1rem 0.5rem;
