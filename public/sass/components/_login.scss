@@ -1,6 +1,5 @@
 .c-aside-login {
-  margin: 2rem 1rem 1rem 1rem;
-  border-top: 2px solid black;
+  margin: 1rem 1rem 1rem 1rem;
   padding-top: 1rem;
   .msg-info {
     justify-content: space-between;
@@ -28,4 +27,9 @@
 .activeButton {
   background-color: black;
   color: white;
+}
+#separation{
+  height: 3px;
+  background-color: $btn-link-color-hover;
+  opacity: 1;
 }

@@ -62,7 +62,8 @@
                 </div>
             </div>
         </section>
-        <aside>
+        <?php require ('../app/views/includes/aside.php');?>
+<!-- <aside>
             <section class="c-aside-search">
                 <div class="form-group">
                     <div class="input-group">
@@ -173,7 +174,7 @@
                     </div>
                 </div>
             </section>
-        </aside>
+        </aside> -->
     </main>
     <?php require ('../app/views/includes/footer.php');?>
 </body>
