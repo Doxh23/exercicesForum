@@ -16,13 +16,13 @@ $bg-gradient-new: linear-gradient(
 );
 $bg-gradient-full-old: -webkit-linear-gradient(
   to right,
-  rgba(133, 155, 255),
-  rgba(69, 43, 95)
+  rgb(133, 155, 255),
+  rgb(69, 43, 95)
 );
 $bg-gradient-full-new: linear-gradient(
   to right,
-  rgba(133, 155, 255),
-  rgba(69, 43, 95)
+  rgb(133, 155, 255),
+  rgb(69, 43, 95)
 );
 $bcg-color-light: #fff;
 $bcg-color-light-opacity: rgba(255, 255, 255, 0.8);
@@ -34,8 +34,8 @@ $font-color-light: #e4e3e3;
 $font-color-med: #bdbdbc;
 $fontFamily: 'helvetica', 'sans-serif';
 $fontSize: 16px;
-$gradientColor1:rgba(133, 155, 255);
-$gradientColor2:rgba(69, 43, 95);
+$gradientColor1:rgb(133, 155, 255);
+$gradientColor2:rgb(69, 43, 95);
 $primaryColor: rgba(103,103,103,1);
 $secondaryColor:rgba(153,153,153,1);
 $tertiaryColor: rgba(188,188,188,1);

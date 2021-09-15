@@ -261,7 +261,7 @@
                                             Topics
                                         </option>
                                     </select>
-                                    <button class="" name="" type="submit">
+                                    <button class="redirectionBottom" name="" type="submit">
                                         Go
                                     </button>
                                 </form>
