@@ -27,28 +27,47 @@
         }
 
         public function getNumberOfMessages($topicID){
-            $this->db->query("SELECT COUNT(*) FROM messages WHERE messages.topic_id = $topicID");
+            $this->db->query("SELECT COUNT(messages.id) AS total FROM messages WHERE messages.topic_id = $topicID");
 
-            $result = $this->db->resultSet();
-            print_r($result);
+            $result = $this->db->single();
+            return $result->total;
         }
 
         public function setTopics(){
             $categoryID = Topics::getCategoryId();
             $boardID = Topics::getBoardId();
-            $this->db->query(  "SELECT * FROM `topics`
+            $this->db->query(  "SELECT  topics.id,
+                                        topics.title,
+                                        topics.author_id,
+                                        topics.board_id,
+                                        topics.creation_date, 
+                                        boards.name, 
+                                        boards.description, 
+                                        users.nickname,
+                                        messages.content,
+                                        messages.edition_date 
+                                FROM `topics`
                                 JOIN boards 
                                 ON boards.id = topics.board_id
                                 JOIN users 
                                 ON users.id = topics.author_id
                                 JOIN messages
-                                ON messages.id = topics.msg_id
+                                ON messages.id = topics.msg_id      
                                 WHERE boards.category = $categoryID
                                 AND topics.board_id = $boardID");
             $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
+                $topicID = Topics::getTopicId();
                 $arrayOfResult = (array)$result[$a];
-                print_r($arrayOfResult);
+                $this->db->query(  "SELECT users.nickname
+                                    FROM messages
+                                    JOIN users
+                                    ON users.id = messages.author_id
+                                    JOIN topics
+                                    ON messages.topic_id = topics.id
+                                    WHERE topic_id = $topicID
+                                    ORDER BY messages.creation_date");
+                $messages = $this->db->single();
                 $template = 
                 '<article class="section__article row row-cols-5">
                     <div class="col-1 col-sm-1">
@@ -70,7 +89,7 @@
                     <div class="col-1 col-sm-1">
                         <p class="article__commentsCount">
                             <!-- $articleCommentsCount -->
-                            ' . $this->getNumberOfMessages($arrayOfResult['id']) . '
+                            ' . $this->getNumberOfMessages($topicID) . '
                         </p>
                     </div>
                     <div class="col-1 col-sm-1">
@@ -82,7 +101,7 @@
                     <div class="col-3 col-sm">
                         <div class="article__authorAndDate">
                             <p class="article__author">
-                                by $articleAuthor
+                                by ' . $messages->nickname . '
                             </p>
                             <p class="article__date">
                             ' . $arrayOfResult['creation_date'] . '
