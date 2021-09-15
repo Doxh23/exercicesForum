@@ -65,50 +65,53 @@
                                     ON users.id = messages.author_id
                                     JOIN topics
                                     ON messages.topic_id = topics.id
-                                    WHERE topic_id = $boardID
+                                    WHERE topic_id = $a;
                                     ORDER BY messages.creation_date");
                 $messages = $this->db->single();
                 $template = 
-                '<article class="section__article row row-cols-5">
-                    <div class="col-1 col-sm-1">
-                        <img class="article__status" src="" alt="STATUS">
-                    </div>
-                    <div class="article__description col-6 col-sm-6 ">
-                        <h3 class="description__title">
-                           ' . $arrayOfResult['title'] . '
-                        </h3>
-                        <div class="description__authorAndGroup row">
-                            <p class="description__author col-sm">
-                                by ' . $arrayOfResult['nickname'] . '
-                            </p>
-                            <p class="description__group col-sm">
-                                in ' . $arrayOfResult['name'] . '
+                
+                '<a class="redirect" href="'.URLROOT.'/pages/topics?category='.$category.'&board='.$arrayOfResult['id'].'
+                    <article class="section__article row row-cols-5">
+                        <div class="col-1 col-sm-1">
+                            <img class="article__status" src="" alt="STATUS">
+                        </div>
+                        <div class="article__description col-6 col-sm-6 ">
+                            <h3 class="description__title">
+                            ' . $arrayOfResult['title'] . '
+                            </h3>
+                            <div class="description__authorAndGroup row">
+                                <p class="description__author col-sm">
+                                    by ' . $arrayOfResult['nickname'] . '
+                                </p>
+                                <p class="description__group col-sm">
+                                    in ' . $arrayOfResult['name'] . '
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-1 col-sm-1">
+                            <p class="article__commentsCount">
+                                <!-- $articleCommentsCount -->
+                                ' . $this->getNumberOfMessages($a) . '
                             </p>
                         </div>
-                    </div>
-                    <div class="col-1 col-sm-1">
-                        <p class="article__commentsCount">
-                            <!-- $articleCommentsCount -->
-                            ' . $this->getNumberOfMessages($topicID) . '
-                        </p>
-                    </div>
-                    <div class="col-1 col-sm-1">
-                        <p class="article__viewsCount">
-                            <!-- $articleViewsCount -->
-                            $
-                        </p>
-                    </div>
-                    <div class="col-3 col-sm">
-                        <div class="article__authorAndDate">
-                            <p class="article__author">
-                                by ' . $messages->nickname . '
-                            </p>
-                            <p class="article__date">
-                            ' . $arrayOfResult['creation_date'] . '
+                        <div class="col-1 col-sm-1">
+                            <p class="article__viewsCount">
+                                <!-- $articleViewsCount -->
+                                $
                             </p>
                         </div>
-                    </div>
-                </article>';
+                        <div class="col-3 col-sm">
+                            <div class="article__authorAndDate">
+                                <p class="article__author">
+                                    by ' . $messages->nickname . '
+                                </p>
+                                <p class="article__date">
+                                ' . $arrayOfResult['creation_date'] . '
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </a>';
                 echo $template;
         }
     }
