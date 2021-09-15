@@ -1,6 +1,5 @@
 <?php 
     require_once('../app/models/topics.php');
-    error_reporting(0);
     $topics = new Topics();
 ?>
 <!DOCTYPE html>
@@ -182,8 +181,12 @@
 
                             <div class="section__body">
                                 <div class="articles__container">
-                                    <?php 
-                                        $topics->setTopics();
+                                    <?php
+                                        if(isset($_GET['category']) && isset($_GET['board'])){
+                                            $topics->setTopics();
+                                        } else {
+                                            echo "Il n'y a rien à afficher ici, déso frère";
+                                        }
                                     ?>
                                 </div>
                             </div>
