@@ -29,7 +29,7 @@
   color: white;
 }
 #separation{
-  height: 3px;
-  background-color: $btn-link-color-hover;
+  height: 5px;
+  background: linear-gradient(90deg, $gradientColor1, $gradientColor2);
   opacity: 1;
 }

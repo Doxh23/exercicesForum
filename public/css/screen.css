@@ -11232,7 +11232,7 @@ main {
 }
 
 body {
-  background-color: #bdbdbc;
+  background-color: #f5f5f5;
 }
 
 @media screen and (max-width: 600px) {
@@ -11264,7 +11264,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #bdbdbc;
+  background-color: #f5f5f5;
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 15px;
@@ -11482,7 +11482,7 @@ footer .bi {
   margin: 0 3px 3px 0;
 }
 
-footer i {
+.foot-contact i {
   margin-right: 5px;
 }
 
@@ -11544,6 +11544,25 @@ ol {
     margin: 0.3rem 0.5rem;
   }
 }
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.gradient-custom-profil {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  /* fallback for old browsers */
+  background: #859bff;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background-size: cover;
+}
+
 .c-aside-activeUsers {
   padding: 1rem;
   color: #686867;
@@ -11552,7 +11571,7 @@ ol {
   border-radius: 15px;
 }
 .c-aside-activeUsers .card-body {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
 }
 
 .user {
@@ -11564,7 +11583,7 @@ ol {
 }
 .user img {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-radius: 100px;
 }
 .user .user-img-status {
@@ -11662,7 +11681,7 @@ ol {
   color: #686867;
 }
 .c-aside-login .btn-hide button:hover {
-  background-color: #bdbdbc;
+  background-color: #dadada;
 }
 .c-aside-login button {
   background-color: black;
@@ -11676,9 +11695,21 @@ ol {
 }
 
 #separation {
-  height: 3px;
-  background-color: #cb80ce;
+  height: 5px;
+  background: linear-gradient(90deg, #859bff, #452b5f);
   opacity: 1;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.topics-container-nav {
+  margin-top: 25px;
+  filter: opacity(0.6);
+  font-size: 10px;
 }
 
 .c-aside-posts {
@@ -11692,7 +11723,7 @@ ol {
   border-radius: 15px 15px 0 0;
 }
 .c-aside-posts .card-body {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-radius: 0 0 15px 15px;
 }
 
@@ -11703,7 +11734,7 @@ ol {
   border-radius: 5px;
 }
 .latestPosts:hover {
-  background-color: #bdbdbc;
+  background-color: #dadada;
   color: white;
 }
 .latestPosts:hover p {
@@ -11785,7 +11816,7 @@ ol {
 }
 
 .category__container {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -11804,7 +11835,7 @@ ol {
   min-width: 33%;
 }
 .cat-card:hover {
-  background-color: #bdbdbc;
+  background-color: #dadada;
   color: white;
 }
 
@@ -11874,6 +11905,7 @@ ol {
 .searchbar .search-forum {
   background-color: #cec9c9;
   border: 1px solid #b1a8a8;
+  color: #000;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 30px;
@@ -11912,7 +11944,7 @@ ol {
 }
 
 .section__header {
-  background: linear-gradient(90deg, #b06ab3, #4668db);
+  background: linear-gradient(90deg, #859bff, #452b5f);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: white;
@@ -11926,7 +11958,7 @@ ol {
 }
 
 .section__body {
-  background-color: #bdbdbc;
+  background-color: #f5f5f5;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -11938,13 +11970,14 @@ ol {
 
 .section__article {
   background-color: white;
-  border: 1px #bdbdbc solid;
 }
 
 .button {
-  background-color: #b06ab3;
-  border-radius: 10px;
+  background-color: #859bff;
+  border-radius: 15px;
   color: white;
+  font-size: 14px;
+  padding: 0.5rem;
 }
 
 .comments-main {
@@ -11971,7 +12004,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #bdbdbc;
+  background-color: #f5f5f5;
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 15px;
@@ -12175,11 +12208,10 @@ form label {
 }
 form button {
   background-color: black;
-  color: white;
   border: none;
 }
 form button:hover {
-  background-color: #bdbdbc;
+  background-color: #dadada;
   color: black;
 }
 form a:link, form a:visited, form a:focus {
