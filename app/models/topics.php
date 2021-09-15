@@ -65,7 +65,7 @@
                                     ON users.id = messages.author_id
                                     JOIN topics
                                     ON messages.topic_id = topics.id
-                                    WHERE topic_id = $topicID
+                                    WHERE topic_id = $boardID
                                     ORDER BY messages.creation_date");
                 $messages = $this->db->single();
                 $template = 
