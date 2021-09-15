@@ -78,7 +78,9 @@
                             <div class="row row-cols-2">
 
                                 <div class="toolbar__create col-lg-3 d-flex align-items-center">
-                                    <button class="button">New Topic <i class="fas fa-pen"></i></button>
+                                    <?php if (!empty($_SESSION["username"])): ?>
+                                        <a href="<=URLROOT?>/posts/create" class="button redirect">New Topic <i class="fas fa-pen"></i></a>
+                                    <?php endif; ?>
                                 </div>
 
                                 <div class="toolbar__search col-lg-6 d-flex align-items-center">

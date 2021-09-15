@@ -1,9 +1,9 @@
-a.redirect {
+a.redirect-category{
   &:link,
   &:hover,
   &:focus,
   &:visited {
     text-decoration: none !important;
-    width: 33%;
+    max-width: 33%;
   }
 }

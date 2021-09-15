@@ -21,7 +21,7 @@
             foreach($result as  $a => $index){
                 $arrayOfResult = (array)$result[$a];
                 $template =
-                '<a class="redirect" href="'.URLROOT.'/pages/topics?category='.$category.'&board='.$arrayOfResult['id'].'"
+                '<a class="redirect-category" href="'.URLROOT.'/pages/topics?category='.$category.'&board='.$arrayOfResult['id'].'"
                     <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                         <div class="cat-card mb-3">
                             <div class="cat-card-header">
