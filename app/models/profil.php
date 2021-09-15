@@ -29,21 +29,20 @@ class profil {
 
         $result = $this->db->resultSet();
         $arrayOfResult = [];
-        foreach($result as  $a => $a_value){
-            $arrayOfResult = (array)$result[$a];
+       
             
             $template =
             '<form action="" method="post">
             <label for="note"> </label> <br>
             <input name="username" value="'.$_SESSION["username"]. ' '.'"type=""> <br>
-            <input name="password" type="password" value="'.$arrayOfResult["password"].'" type=""> <br>
-            <input name="signature" value="'.$arrayOfResult["signature"].'" type=""> <br>
+            <input name="password" type="password" value="'.$_SESSION["password"].'" type=""> <br>
+            <input name="signature" value="'.$_SESSION["signature"].'" type=""> <br>
             <button id="change"> click me </button>
             </form>';
         
             echo $template;
             
-    }
+    
     if(isset($_POST['username'])){
         if (isset($_POST['password'])){
             if (isset($_POST['signature'])){
@@ -51,12 +50,12 @@ class profil {
         $nickname = $_POST['username'];
         $password = $_POST['password'];
         $signature = $_POST['signature'];
-        $this->db->query("UPDATE users set nickname='$nickname',signature='$signature',password='$password' where nickname='$username'");
+        $rpnick = str_replace(' ', '',$nickname);
+        $this->db->query("UPDATE users set nickname='$rpnick',signature='$signature',password='$password' where nickname='$username'");
         $change = $this->db->resultSet();
-        $_SESSION["username"]=$nickname;
-        echo "<script>
-        alert('informations changés')
-        </script>";
+        $_SESSION["username"]=$rpnick;
+        
+        echo  '<meta http-equiv="refresh" content="1" />';
         
         
             }
@@ -64,3 +63,7 @@ class profil {
     }
 }
 }
+
+
+
+
