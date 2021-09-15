@@ -1,5 +1,4 @@
 <?php 
-    require_once('../app/models/topics.php');
     $topics = new Topics();
 ?>
 <!DOCTYPE html>
@@ -14,6 +13,13 @@
 </head>
 <body>
     <?php require ('../app/views/includes/header.php');?>
+    <div class="modal hidden">
+        <form action="addTopics.php" method="POST">
+
+
+            <input type="submit">
+        </form>
+    </div>
     <main class="layout__main">
             <div class=" main__row row">
                 <div class="main__containerLeft">

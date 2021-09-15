@@ -36,8 +36,6 @@
         public function setTopics(){
             $categoryID = Topics::getCategoryId();
             $boardID = Topics::getBoardId();
-            echo $categoryID;
-            echo $boardID;
             $this->db->query(  "SELECT * FROM `topics`
                                 JOIN boards 
                                 ON boards.id = topics.board_id
@@ -87,7 +85,7 @@
                                 by $articleAuthor
                             </p>
                             <p class="article__date">
-                            ' . $arrayOfResult['creation-date'] . '
+                            ' . $arrayOfResult['creation_date'] . '
                             </p>
                         </div>
                     </div>
