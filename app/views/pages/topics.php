@@ -24,7 +24,10 @@
             <div class=" main__row row">
                 <div class="main__containerLeft">
                     <div class="container">
-                        <div class="components__breadcrumb row">
+                        <div class="row ">
+                            <p class="topics-container-nav"><i class="fas fa-home"></i> Home < Board Index < Board Categorie One < Topic icon Demos</p>
+                        </div>
+                        <!-- <div class="components__breadcrumb row">
                             <nav class="breadcrumb__items ">
                                 <ul class="breadcrumb">
                                     <li class="breadcrumb-item">
@@ -41,7 +44,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div> -->
 
                         <div class="main__heading"> 
                             <h1 class="heading__title">
@@ -74,13 +77,11 @@
                         <div class="components__toolbarTop">
                             <div class="row row-cols-2">
 
-                                <div class="toolbar__create col-lg-3">
-                                    <button class="button">
-                                        New Topic <i class="fas fa-pen"></i>
-                                    </button>
+                                <div class="toolbar__create col-lg-3 d-flex align-items-center">
+                                    <button class="button">New Topic <i class="fas fa-pen"></i></button>
                                 </div>
 
-                                <div class="toolbar__search col-lg-5">
+                                <div class="toolbar__search col-lg-6 d-flex align-items-center">
                                     <div class="row">
                                         <nav class="searchbar">
                                             <form method="GET" action="" class="row row-cols-3 searchform">
@@ -90,7 +91,7 @@
                                     </div>
                                 </div>
 
-                                <div class="toolbar__count col-12 col-lg-4">
+                                <div class="toolbar__count col-12 col-lg-3">
                                     $topicsCount &bull;
                                     <!-- echo "Page".$currentPageNumber." of ".$totalPagesNumber -->
                                     $page of $pages
@@ -103,9 +104,7 @@
                             <div class="section__header">    
                                 <div class="row row-cols-4 header_elements">
                                     <div class="col-7 col-sm-7">
-                                        <h2>
-                                            Announcements
-                                        </h2>
+                                        <p>Announcements</p>
                                     </div>
                                     <div class="col-1 col-sm-1">
                                         <i class="fas fa-comments"></i>
@@ -169,9 +168,7 @@
                             <div class="section__header">    
                                 <div class="row row-cols-4 header_elements">
                                     <div class="col-7 col-sm-7">
-                                        <h2>
-                                            Topics
-                                        </h2>
+                                        <p>Topics</p>
                                     </div>
                                     <div class="col-1 col-sm-1">
                                         <i class="fas fa-comments"></i>
@@ -202,7 +199,7 @@
                         <div class="components__toolbarBottom">
                             <div class="row row-cols-2">
 
-                                <div class="toolbar__create col-lg-3">
+                                <div class="toolbar__create col-lg-3 d-flex justify-content-center align-items-center">
                                     <button class="button">
                                         New Topic <i class="fas fa-pen"></i>
                                     </button>
@@ -211,14 +208,10 @@
                                     <form method="GET" action="">
                                         <select class="sort__options" name="sort" id="sort">
                                             <option value="DESC">
-                                                <div>
-                                                    <i class="fas fa-sort-amount-down-alt">DESC</i>
-                                                </div>
+                                                <i class="fas fa-sort-amount-down-alt">DESC</i>
                                             </option>
                                             <option value="ASC">
-                                                <div>
-                                                    <i class="fas fa-sort-amount-up-alt">ASC</i>
-                                                </div>
+                                                <i class="fas fa-sort-amount-up-alt">ASC</i>
                                             </option>
                                         </select>
                                     </form>
@@ -233,11 +226,11 @@
                             </div>
                         </div>
 
-                        <div class="components__container row">
+                        <div class="components__container row d-flex justify-content-end">
 
-                            <div class="components__breadcrumb col">
+                            <!-- <div class="components__breadcrumb col">
                                 <div class="breadcrumb__icon">
-                                    <!-- CODE FOR HOME ICON -->
+                                    <!-- CODE FOR HOME ICON 
                                 </div>
                                 <nav class="breadcrumb__items ">
                                     <ul class="breadcrumb">
@@ -255,7 +248,7 @@
                                         </li>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div> -->
 
                             <div class="toolbar__jump col-3">
                                 <!-- DUMMY DROPDOWN MENU -->
@@ -392,7 +385,7 @@
                 </aside> -->
             
             </div>
-            <?php require ('../app/views/includes/aside.php');?>
+        <?php require ('../app/views/includes/aside.php');?>
     </main>
     <?php require ('../app/views/includes/footer.php');?>
 </body>

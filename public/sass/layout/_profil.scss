@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.gradient-custom-profil{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    /* fallback for old browsers */
+    background: $bg-gradient-uni;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: $bg-gradient-old;
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: $bg-gradient-new, url('../images/testBg1.png');
+    background-size: cover;
+}

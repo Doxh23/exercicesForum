@@ -16,7 +16,7 @@
 }
 
 .section__body {
-    background-color: #bdbdbc;
+    background-color: $bcg-color-contrast;
     padding:1rem;
     
     margin-bottom:1rem;
@@ -31,6 +31,4 @@
 
 .section__article {
     background-color: white;
-    border: 1px #bdbdbc solid;
-
 }
