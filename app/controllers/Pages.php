@@ -38,7 +38,6 @@ class Pages extends Controller {
             'userName' => '',
             'psw' => ''
         ];
-        $this->model('login');
         $this->view('users/login', $data);
     }
     public function register() {
