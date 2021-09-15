@@ -1,5 +1,4 @@
 <?php
-    require ('../app/models/categories.php');
     echo $_SESSION["username"];
 ?>
 <!DOCTYPE html>

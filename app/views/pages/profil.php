@@ -3,11 +3,7 @@ if (isset($_POST['submit'])){
     header('Refresh:1;url='.URLROOT.'/pages/profil');
    echo  '<meta http-equiv="refresh" content="5" />';
 }
-require ('../app/models/profil.php');
 $mess1 = new profil;
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

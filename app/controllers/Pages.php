@@ -8,26 +8,28 @@ class Pages extends Controller {
         $data = [
             'title' => 'Home page'
         ];
-
+        
         $this->view('index', $data);
     }
     public function categories() {
         $data = [
             'title' => 'Category Page'
         ];
-
+        $this->model('categories');
         $this->view('pages/categories', $data);
     }
     public function topics(){
         $data = [
             'title' => 'Topics pages'
         ];
+        $this->model('topics');
         $this->view('pages/topics', $data);
     }
     public function messages(){
         $data = [
             'title' => 'Messages pages'
         ];
+        $this->model('messages');
         $this->view('pages/messages', $data);
     }
     public function login() {
@@ -36,7 +38,7 @@ class Pages extends Controller {
             'userName' => '',
             'psw' => ''
         ];
-
+        $this->model('login');
         $this->view('users/login', $data);
     }
     public function register() {
@@ -46,7 +48,7 @@ class Pages extends Controller {
             'pswError' => '',
             'mailError' => ''
         ];
-
+        $this->model('register');
         $this->view('users/register', $data);
     }
     public function destroy() {
@@ -60,7 +62,7 @@ class Pages extends Controller {
         $data = [
             'title' => 'profil page'
         ];
-
+        $this->model('profil');
         $this->view('pages/profil', $data);
     }
 }

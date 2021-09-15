@@ -1,6 +1,4 @@
 <?php 
-    require_once('../app/models/topics.php');
-    error_reporting(0);
     $topics = new Topics();
 ?>
 <!DOCTYPE html>
@@ -15,6 +13,13 @@
 </head>
 <body>
     <?php require ('../app/views/includes/header.php');?>
+    <div class="modal hidden">
+        <form action="addTopics.php" method="POST">
+
+
+            <input type="submit">
+        </form>
+    </div>
     <main class="layout__main">
             <div class=" main__row row">
                 <div class="main__containerLeft">
@@ -179,8 +184,12 @@
 
                             <div class="section__body">
                                 <div class="articles__container">
-                                    <?php 
-                                        $topics->setTopics();
+                                    <?php
+                                        if(isset($_GET['category']) && isset($_GET['board'])){
+                                            $topics->setTopics();
+                                        } else {
+                                            echo "Il n'y a rien à afficher ici, déso frère";
+                                        }
                                     ?>
                                 </div>
                             </div>
