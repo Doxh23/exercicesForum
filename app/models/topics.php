@@ -18,10 +18,6 @@
             return $_GET['category'];
         }
 
-        static function getTopicId(){
-            return  $_GET['topic'];
-        }
-
         static function getBoardId(){
             return  $_GET['board'];
         }
@@ -58,7 +54,6 @@
             $result = $this->db->resultSet();
             print_r($result);
             foreach($result as  $a => $a_value){
-                $topicID = Topics::getTopicId();
                 $arrayOfResult = (array)$result[$a];
                 $this->db->query(  "SELECT users.nickname
                                     FROM messages
@@ -71,7 +66,7 @@
                 $messages = $this->db->single();
                 $template = 
                 
-                '<a class="redirect row" href="'.URLROOT.'/pages/messages?topic='.($topicID).'&board='.$arrayOfResult['id'] .'">
+                '<a class="redirect-topic row" href="'.URLROOT.'/pages/messages?topic='.($a+1).'">
                     <article class="section__article row row-cols-5">
                         <div class="col-1 col-sm-1">
                             <img class="article__status" src="" alt="STATUS">
@@ -98,7 +93,7 @@
                         <div class="col-1 col-sm-1">
                             <p class="article__viewsCount">
                                 <!-- $articleViewsCount -->
-                                $
+                                ' . $arrayOfResult['vues'] . '
                             </p>
                         </div>
                         <div class="col-3 col-sm">

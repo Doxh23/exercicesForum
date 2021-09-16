@@ -11424,29 +11424,19 @@ aside {
     display: none;
   }
 }
-.topic__container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
 }
 
-.status {
-  width: 50px;
-  height: 50px;
-  background-color: green;
-  color: lightgreen;
+.section__header p {
+  margin: 5px 0;
 }
 
-.topic__title {
-  display: flex;
-  flex-direction: column;
-}
-.topic__title .topic__info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.redirectionBottom {
+  color: #f3eeee;
+  background-color: #b8b8b8;
 }
 
 footer {
@@ -12262,6 +12252,10 @@ form input {
 a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, a.redirect-category:visited {
   text-decoration: none !important;
   max-width: 33%;
+}
+
+a.redirect-topic:link, a.redirect-topic:hover, a.redirect-topic:focus, a.redirect-topic:visited {
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=screen.css.map */

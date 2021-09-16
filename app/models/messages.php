@@ -15,13 +15,18 @@
             return $result;
         }
 
+        static function getTopicId(){
+            return $_GET['topic'];
+        }
+
         public function setMessages(){
+            $topicID = Messages::getTopicId();
             $this->db->query("  SELECT * FROM messages
                                 JOIN users
                                 ON messages.author_id = users.id
                                 JOIN topics
-                                ON messages.topic_id = topics.id
-                                WHERE topics.id = 0");
+                                ON topics.id = messages.topic_id
+                                WHERE topics.id = '$topicID'");
 
             $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
