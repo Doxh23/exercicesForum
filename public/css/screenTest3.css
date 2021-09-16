@@ -11183,9 +11183,9 @@ header button {
   /* fallback for old browsers */
   background: #859bff;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor.jpg");
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor.jpg");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor2.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -11451,7 +11451,7 @@ footer {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, #859bff, #452b5f);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, #859bff, #452b5f repeat-x repeat-y scroll 0% 0% #000000);
+  background: linear-gradient(to right, #859bff, #452b5f);
   font-size: 1.8rem;
   text-decoration: none;
   padding: 5rem 0 2.5rem;
@@ -12186,13 +12186,14 @@ ol {
 
 .rezet {
   background-color: transparent;
+  width: 100vw;
   height: 100vh;
   /* fallback for old browsers */
   background: #859bff;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../../images/Mordor.jpg");
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../../images/Mordor.jpg");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor2.png");
   background-size: cover;
 }
 
@@ -12254,4 +12255,4 @@ a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, 
   max-width: 33%;
 }
 
-/*# sourceMappingURL=screen.css.map */
+/*# sourceMappingURL=screenTest3.css.map */

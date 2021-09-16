@@ -37,7 +37,7 @@
         ?>
         <div class="title">
             <div class="d-flex justify-content-center align-items-center">
-                <h1 class="text-white mb-0">Tracker</h1>
+                <h1 class="text-white mb-0">Mordor</h1>
             </div>
         </div>
     </div>
