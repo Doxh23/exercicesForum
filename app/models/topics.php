@@ -56,6 +56,7 @@
                                 WHERE boards.category = $categoryID
                                 AND topics.board_id = $boardID");
             $result = $this->db->resultSet();
+            print_r($result);
             foreach($result as  $a => $a_value){
                 $topicID = Topics::getTopicId();
                 $arrayOfResult = (array)$result[$a];
@@ -70,7 +71,7 @@
                 $messages = $this->db->single();
                 $template = 
                 
-                '<a class="redirect" href="'.URLROOT.'/pages/messages?topic='.($topicID).'&board='.$arrayOfResult['id'].'>
+                '<a class="redirect row" href="'.URLROOT.'/pages/messages?topic='.($topicID).'&board='.$arrayOfResult['id'] .'">
                     <article class="section__article row row-cols-5">
                         <div class="col-1 col-sm-1">
                             <img class="article__status" src="" alt="STATUS">

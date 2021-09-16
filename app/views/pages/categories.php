@@ -28,7 +28,7 @@
                         <div class="row">
                             <?php 
                                 $cat1 = new Categories;
-                                $cat1->setCategories(0);
+                                $cat1->setCategories(1);
                             ?>
                         </div>   
                     </div>
@@ -39,7 +39,7 @@
                         <div class="row">
                         <?php 
                                 $cat2 = new Categories;
-                                $cat2->setCategories(1);
+                                $cat2->setCategories(2);
                             ?>
                         </div>
                     </div>   
@@ -50,7 +50,7 @@
                         <div class="row">
                         <?php 
                                 $cat3 = new Categories;
-                                $cat3->setCategories(2);
+                                $cat3->setCategories(3);
                             ?>
                         </div>
                     </div>

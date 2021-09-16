@@ -11424,19 +11424,29 @@ aside {
     display: none;
   }
 }
-* {
-  padding: 0;
-  border: 0;
-  margin: 0;
+.topic__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.section__header p {
-  margin: 5px 0;
+.status {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  color: lightgreen;
 }
 
-.redirectionBottom {
-  color: #f3eeee;
-  background-color: #b8b8b8;
+.topic__title {
+  display: flex;
+  flex-direction: column;
+}
+.topic__title .topic__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 footer {
