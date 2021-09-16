@@ -15,7 +15,7 @@ $mess1 = new profil;
     <title>Document</title>
 </head>
 <body class="rezet">
-    <main class="w-100 h-100 bg-transparent">
+    <main class="bg-transparent">
         <section class="c-main-login">
             <h1>Edit Profil</h1>
             <div class="login__container">

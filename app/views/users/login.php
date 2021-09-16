@@ -3,6 +3,7 @@
     $test->getUsers();
     $test->redirect($_REQUEST['username'],$_REQUEST['password']);
 
+
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +31,7 @@
                         <input type="password" id="password" name="password" placeholder="Password" class="form-control rounded-pill">
                     </div>
                     <div class="row justify-content-center my-3 px-3">
-                        <button class="btn-block btn-color rounded-pill py-2">Log in</button>
+                        <button id="btn-login"class="btn-block btn-color rounded-pill py-2">Log in</button>
                     </div>
                     <div class="row my-2 justify-content-between">
                         <a href="#">
