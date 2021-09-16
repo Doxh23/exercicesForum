@@ -41,7 +41,7 @@
                                     <button class="comments-post-reply">Post reply <i class="fas fa-long-arrow-alt-left"></i></button>
                                     <button class="comments-wrench"><i class="fas fa-wrench"></i></button>
                                 </div>
-                                <div class="col-5  offset-1 text-end ">
+                                <div class="offset-1 text-end d-flex justify-content-end">
                                     <p>
                                         1 post- pages 1 of 1
                                     </p>
