@@ -12254,7 +12254,7 @@ a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, 
   max-width: 33%;
 }
 
-a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, a.redirect-category:visited {
+a.redirect-topic:link, a.redirect-topic:hover, a.redirect-topic:focus, a.redirect-topic:visited {
   text-decoration: none !important;
 }
 
