@@ -11424,6 +11424,21 @@ aside {
     display: none;
   }
 }
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.section__header p {
+  margin: 5px 0;
+}
+
+.redirectionBottom {
+  color: #f3eeee;
+  background-color: #b8b8b8;
+}
+
 footer {
   margin-top: -2rem;
   position: relative;
