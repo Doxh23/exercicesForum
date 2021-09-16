@@ -16,19 +16,16 @@
     <main>
         <section class="c-main-categories">
             <div class="categories__container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Board index</li>
-                    </ol>
-                </nav>
+                <div class="row ">
+                    <p class="categories-container-nav"><i class="fas fa-home"></i> Home < Board Index < Board Categorie One < Topic icon Demos < topic read(hot) </p>
+                </div>
                 <div class="category">
                     <h1>category one</h1>
                     <div class="category__container">
                         <div class="row">
                             <?php 
                                 $cat1 = new Categories;
-                                $cat1->setCategories(0);
+                                $cat1->setCategories(1);
                             ?>
                         </div>   
                     </div>
@@ -39,7 +36,7 @@
                         <div class="row">
                         <?php 
                                 $cat2 = new Categories;
-                                $cat2->setCategories(1);
+                                $cat2->setCategories(2);
                             ?>
                         </div>
                     </div>   
@@ -50,7 +47,7 @@
                         <div class="row">
                         <?php 
                                 $cat3 = new Categories;
-                                $cat3->setCategories(2);
+                                $cat3->setCategories(3);
                             ?>
                         </div>
                     </div>

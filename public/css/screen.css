@@ -8732,9 +8732,9 @@ header button {
   /* fallback for old browsers */
   background: #859bff;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -8788,8 +8788,8 @@ body {
     background-color: white; }
   .comments-main .comments-container-nav {
     margin-top: 25px;
-    filter: opacity(0.6);
-    font-size: 10px; }
+    font-size: 10px;
+    color: #b8b8b8; }
   .comments-main .comments-button-comment {
     margin-bottom: 15px;
     margin-top: 15px; }
@@ -8925,6 +8925,18 @@ aside {
 @media screen and (max-width: 750px) {
   aside {
     display: none; } }
+* {
+  padding: 0;
+  border: 0;
+  margin: 0; }
+
+.section__header p {
+  margin: 5px 0; }
+
+.redirectionBottom {
+  color: #f3eeee;
+  background-color: #b8b8b8; }
+
 footer {
   margin-top: -2rem;
   position: relative;
@@ -9154,8 +9166,13 @@ ol {
 
 .topics-container-nav {
   margin-top: 25px;
-  filter: opacity(0.6);
-  font-size: 10px; }
+  font-size: 10px;
+  color: #b8b8b8; }
+
+.categories-container-nav {
+  margin-top: 25px;
+  font-size: 10px;
+  color: #b8b8b8; }
 
 .c-aside-posts {
   padding: 1rem;
@@ -9352,7 +9369,7 @@ ol {
   background: linear-gradient(90deg, #859bff, #452b5f);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: white;
+  color: #fff;
   font-size: 16px;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -9375,7 +9392,7 @@ ol {
 .button {
   background-color: #859bff;
   border-radius: 15px;
-  color: white;
+  color: #fff;
   font-size: 14px;
   padding: 0.5rem; }
 
@@ -9389,8 +9406,8 @@ ol {
     background-color: white; }
   .comments-main .comments-container-nav {
     margin-top: 25px;
-    filter: opacity(0.6);
-    font-size: 10px; }
+    font-size: 10px;
+    color: #b8b8b8; }
   .comments-main .comments-button-comment {
     margin-bottom: 15px;
     margin-top: 15px; }
@@ -9527,14 +9544,13 @@ ol {
 
 .rezet {
   background-color: transparent;
-  width: 100vw;
   height: 100vh;
   /* fallback for old browsers */
   background: #859bff;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
+  background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../../images/Mordor.jpg");
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../../images/Mordor.jpg");
   background-size: cover; }
 
 .c-main-login {
@@ -9587,5 +9603,8 @@ form {
 a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, a.redirect-category:visited {
   text-decoration: none !important;
   max-width: 33%; }
+
+a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, a.redirect-category:visited {
+  text-decoration: none !important; }
 
 /*# sourceMappingURL=screen.css.map */

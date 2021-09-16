@@ -5,17 +5,19 @@
 }
 .rezet {
   background-color: transparent;
-  width: 100vw;
   height: 100vh;
   /* fallback for old browsers */
   background: $bg-gradient-uni;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: $bg-gradient-old;
+  background: $bg-gradient-old,
+  url("../../images/Mordor.jpg");
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: $bg-gradient-new, url('../images/testBg1.png');
+  background: $bg-gradient-new,
+  url("../../images/Mordor.jpg");
   background-size: cover;
+  // background-repeat: no-repeat;
 }
 
 .c-main-login {
