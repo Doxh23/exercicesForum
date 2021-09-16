@@ -1,3 +1,9 @@
+<?php 
+    $test1 = new User;
+    $test1->getUsers();
+    $test1->getConnexion($_REQUEST['username'],$_REQUEST['password']);
+    $test1->redirect($_REQUEST['username'],$_REQUEST['password']);
+?>
 <aside>
     <section class="c-aside-search">
         <input class="search-bar-aside" placeholder="Search" type="text">
@@ -19,7 +25,7 @@
                     <button>-</button>
                 </div> -->
             </div>
-            <form action="<?php echo URLROOT; ?>/users/login" method="POST">
+            <form action="<?=URLROOT?>/users/login" method="POST">
                 <div class="form-group">
                     <label class="form-control-label text-muted" for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Username" class="form-control rounded-pill">

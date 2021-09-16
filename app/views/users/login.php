@@ -1,8 +1,8 @@
 <?php 
     $test = new User;
     $test->getUsers();
+    $test->getConnexion($_REQUEST['username'],$_REQUEST['password']);
     $test->redirect($_REQUEST['username'],$_REQUEST['password']);
-
 
 ?>
 
@@ -21,7 +21,7 @@
         <section class="c-main-login">
             <h1>tracker - login</h1>
             <div class="login__container">
-                <form action = "<?php $_PHP_SELF ?>" method = "POST">
+                <form action = "#" method = "POST">
                     <div class="form-group">
                         <label class="form-control-label text-muted" for="username">Username</label>
                         <input type="text" id="username" name="username" placeholder="Username" class="form-control rounded-pill">
