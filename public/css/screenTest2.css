@@ -11185,7 +11185,7 @@ header button {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor2.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -11253,8 +11253,8 @@ body {
 }
 .comments-main .comments-container-nav {
   margin-top: 25px;
-  filter: opacity(0.6);
   font-size: 10px;
+  color: #b8b8b8;
 }
 .comments-main .comments-button-comment {
   margin-bottom: 15px;
@@ -11424,6 +11424,21 @@ aside {
     display: none;
   }
 }
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.section__header p {
+  margin: 5px 0;
+}
+
+.redirectionBottom {
+  color: #f3eeee;
+  background-color: #b8b8b8;
+}
+
 footer {
   margin-top: -2rem;
   position: relative;
@@ -11482,7 +11497,7 @@ footer .bi {
   margin: 0 3px 3px 0;
 }
 
-footer i {
+.foot-contact i {
   margin-right: 5px;
 }
 
@@ -11708,8 +11723,14 @@ ol {
 
 .topics-container-nav {
   margin-top: 25px;
-  filter: opacity(0.6);
   font-size: 10px;
+  color: #b8b8b8;
+}
+
+.categories-container-nav {
+  margin-top: 25px;
+  font-size: 10px;
+  color: #b8b8b8;
 }
 
 .c-aside-posts {
@@ -11851,6 +11872,8 @@ ol {
 .cat-card-header h1, .cat-card-header .h1 {
   font-size: 1.4rem;
   font-weight: 600;
+  width: 100px;
+  word-wrap: break-word;
 }
 .cat-card-header p {
   font-size: 0.8rem;
@@ -11905,6 +11928,7 @@ ol {
 .searchbar .search-forum {
   background-color: #cec9c9;
   border: 1px solid #b1a8a8;
+  color: #000;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   height: 30px;
@@ -11946,7 +11970,7 @@ ol {
   background: linear-gradient(90deg, #859bff, #452b5f);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  color: white;
+  color: #fff;
   font-size: 16px;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -11973,8 +11997,10 @@ ol {
 
 .button {
   background-color: #859bff;
-  border-radius: 10px;
-  color: white;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5rem;
 }
 
 .comments-main {
@@ -11990,8 +12016,8 @@ ol {
 }
 .comments-main .comments-container-nav {
   margin-top: 25px;
-  filter: opacity(0.6);
   font-size: 10px;
+  color: #b8b8b8;
 }
 .comments-main .comments-button-comment {
   margin-bottom: 15px;
@@ -12167,7 +12193,7 @@ ol {
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/testBg1.png");
+  background: linear-gradient(to right, rgba(133, 155, 255, 0.6), rgba(69, 43, 95, 0.6)), url("../images/Mordor2.png");
   background-size: cover;
 }
 
@@ -12205,7 +12231,6 @@ form label {
 }
 form button {
   background-color: black;
-  color: white;
   border: none;
 }
 form button:hover {
@@ -12225,9 +12250,9 @@ form input {
   margin: 1rem 0;
 }
 
-a.redirect:link, a.redirect:hover, a.redirect:focus, a.redirect:visited {
+a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, a.redirect-category:visited {
   text-decoration: none !important;
-  width: 33%;
+  max-width: 33%;
 }
 
 /*# sourceMappingURL=screenTest2.css.map */

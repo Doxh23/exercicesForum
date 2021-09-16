@@ -16,12 +16,9 @@
     <main>
         <section class="c-main-categories">
             <div class="categories__container">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Board index</li>
-                    </ol>
-                </nav>
+                <div class="row ">
+                    <p class="categories-container-nav"><i class="fas fa-home"></i> Home < Board Index < Board Categorie One < Topic icon Demos < topic read(hot) </p>
+                </div>
                 <div class="category">
                     <h1>category one</h1>
                     <div class="category__container">
