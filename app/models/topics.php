@@ -36,12 +36,13 @@
                                         topics.title,
                                         topics.author_id,
                                         topics.board_id,
-                                        topics.creation_date, 
+                                        topics.creation_date,
+                                        topics.vues,
                                         boards.name, 
                                         boards.description, 
                                         users.nickname,
                                         messages.content,
-                                        messages.edition_date 
+                                        messages.edition_date
                                 FROM `topics`
                                 JOIN boards 
                                 ON boards.id = topics.board_id
@@ -52,7 +53,6 @@
                                 WHERE boards.category = $categoryID
                                 AND topics.board_id = $boardID");
             $result = $this->db->resultSet();
-            print_r($result);
             foreach($result as  $a => $a_value){
                 $arrayOfResult = (array)$result[$a];
                 $this->db->query(  "SELECT users.nickname

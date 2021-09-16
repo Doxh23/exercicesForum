@@ -11992,6 +11992,9 @@ ol {
 
 .section__article {
   background-color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 
 .button {
@@ -12260,6 +12263,7 @@ a.redirect-category:link, a.redirect-category:hover, a.redirect-category:focus, 
 
 a.redirect-topic:link, a.redirect-topic:hover, a.redirect-topic:focus, a.redirect-topic:visited {
   text-decoration: none !important;
+  color: black;
 }
 
 /*# sourceMappingURL=screen.css.map */
