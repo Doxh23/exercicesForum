@@ -31,10 +31,11 @@
             $result = $this->db->resultSet();
             foreach($result as  $a => $a_value){
                 $arrayOfResult = (array)$result[$a];
+                $avatar = "https://www.gravatar.com/avatar/".md5($arrayOfResult['email'])."?d=identicon";
                 $template =
                             '<div class="row content-comments">
                                 <div class="col-4 autor-comments">
-                                    <img src="" alt="" class="avatar">
+                                    <img src="'.$avatar.'" alt="avatar" class="avatar">
                                     <p class="pseudo">' . $arrayOfResult['nickname'] . '</p>
                                     <p class="role">name 2</p>
                                     <p class="post">post</p>
