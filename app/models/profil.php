@@ -32,13 +32,21 @@ class profil {
        
             
             $template =
-            '<form action="" method="post">
-            <label for="note"> </label> <br>
-            <input name="username" value="'.$_SESSION["username"]. ' '.'"type=""> <br>
-            <input name="password" type="password" value="'.$_SESSION["password"].'" type=""> <br>
-            <input name="signature" value="'.$_SESSION["signature"].'" type=""> <br>
-            <button id="change"> click me </button>
-            </form>';
+            '
+            <form action="" method="post">
+            
+            <label class="form-control-label" id="username" for="username">Username</label> <br>
+            <input class="form-control rounded-pill "name="username" value="'.$_SESSION["username"]. ' '.'"type="text"> <br>
+            <label class="form-control-label" id="password" for="password">password</label> <br>
+
+            <input class="form-control rounded-pill " name="password" type="password" value="'.$_SESSION["password"].'" type=""> <br>
+            <label class="form-control-label" for="signature">Signature</label>
+            <input  class="form-control rounded-pill " name="signature" value="'.$_SESSION["signature"].'" type=""> <br>
+            <button class="btn-block btn-color rounded-pill py-2">save change</button>
+
+            </form>
+            
+            ';
         
             echo $template;
             

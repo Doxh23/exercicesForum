@@ -45,16 +45,23 @@
 
 form {
   box-sizing: border-box;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
   .form-group {
     margin: 1rem 0;
   }
   label {
-    display: none;
+    color: #B0AEAE;
+    font-size: 24px;
+
   }
   button {
+    width: 100%;
+    color:white;
     background-color: black;
     border: none;
+  
     &:hover {
       background-color: $bcg-color-med;
       color: black;
