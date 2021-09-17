@@ -1,8 +1,7 @@
-<?php 
-    $test1 = new User;
-    $test1->getUsers();
-    $test1->getConnexion($_REQUEST['username'],$_REQUEST['password']);
-    $test1->redirect($_REQUEST['username'],$_REQUEST['password']);
+<?php
+    require('../app/models/login.php');
+    $log = new Login;
+    $log->redirect($_REQUEST['username'],$_REQUEST['password']);
 ?>
 <aside>
     <section class="c-aside-search">
@@ -25,22 +24,7 @@
                     <button>-</button>
                 </div> -->
             </div>
-            <form action="<?=URLROOT?>/users/login" method="POST">
-                <div class="form-group">
-                    <label class="form-control-label text-muted" for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Username" class="form-control rounded-pill">
-                </div>
-                <div class="form-group">
-                    <label class="form-control-label text-muted ">Password</label>
-                    <input type="password" id="psw" name="psw" placeholder="Password" class="form-control rounded-pill">
-                </div>
-                <div class="row justify-content-center my-3 px-3">
-                    <button class="btn-block btn-color rounded-pill py-2">Log in</button>
-                </div>
-                <div class="row justify-content-center my-2">
-                    <a href="#"><small class="text-muted">Forgot Password?</small></a>
-                </div>
-            </form>
+            <?php require('../app/views/users/login.php');?>
         </div>
     </section>
     <section class="c-aside-posts">
