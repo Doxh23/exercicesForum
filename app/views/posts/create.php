@@ -10,28 +10,28 @@
 </head>
 <body>
     <?php require ('../app/views/includes/header.php');?>
-    <main>
+    <main class="layout__main">
         <section class="components__form">
-            <h1>Create new topic in board <?php echo $_GET["board"] ?></h1>
+            <h1 class="form__heading">Create new topic in board <?php echo $_GET["board"] ?></h1>
             <form action="<?php echo URLROOT; ?>/posts/create" method="POST">
-                <label for="title">Title of the topic:</label>
+                <label for="title" class="form__label--title">Title of the topic:</label>
                 <br>    
-                <input type="text" name="title" id="name">
+                <input type="text" class= "form__input--title" name="title" id="name">
                 <br>
                 <span class="invalidFeedback">
                     <?php echo $data['titleError'] ?>
                 </span>
                 <br>
-                <label for="body">Content of the topic:</label>
+                <label for="body" class="form__label--body">Content of the topic:</label>
                 <br>
-                <textarea name="body" id="body" placeholder="Write here the body of your post..."></textarea>
+                <textarea name="body" class="form__input--body" id="body"placeholder="Write here the body of your post..."></textarea>
                 <br>
                 <span class="invalidFeedback">
                     <?php echo $data['bodyError'] ?>
                 </span>
                 <input name="board_id" type="number" style="display:none" value ="<?php echo $_GET["board"] ?>">
                 <br>
-                <button name="submit" type="submit">Submit topic</button>
+                <button name="submit" type="submit" class="btn-block btn-color rounded-pill py-2">Submit topic</button>
             </form>
         </section>
         <?php require ('../app/views/includes/aside.php');?>
