@@ -73,10 +73,7 @@ class Login extends Controller{
             $_SESSION["email"]=$dbMail['email'];
             $_SESSION["avatar"]=$dbAvatar['avatar'];
             $_SESSION["signature"]=$dbSignature['signature'];
-             
             exit;
-        } else {
-            echo 'problem problem problem';
         }
     }
 }

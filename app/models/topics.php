@@ -40,16 +40,12 @@
                                         topics.vues,
                                         boards.name, 
                                         boards.description, 
-                                        users.nickname,
-                                        messages.content,
-                                        messages.edition_date
+                                        users.nickname
                                 FROM `topics`
                                 JOIN boards 
                                 ON boards.id = topics.board_id
                                 JOIN users 
                                 ON users.id = topics.author_id
-                                JOIN messages
-                                ON messages.topic_id = topics.id
                                 WHERE boards.category = $categoryID
                                 AND topics.board_id = $boardID");
             $result = $this->db->resultSet();
@@ -65,15 +61,15 @@
                                     ORDER BY messages.creation_date");
                 $messages = $this->db->single();
                 $template = 
-                
-                '<a class="redirect-topic row" href="'.URLROOT.'/pages/messages?topic='.($a+1).'">
+
+                '<a class="redirect-topic row" href="'.URLROOT.'/pages/messages?topic='.($arrayOfResult['id']).'">
                     <article class="section__article row row-cols-5">
                         <div class="col-1 col-sm-1">
                             <img class="article__status" src="" alt="STATUS">
                         </div>
                         <div class="article__description col-6 col-sm-6 ">
                             <h3 class="description__title">
-                            ' . $arrayOfResult['title'] . '
+                            ' . $arrayOfResult['title'] .'
                             </h3>
                             <div class="description__authorAndGroup row">
                                 <p class="description__author col-sm">
@@ -87,7 +83,7 @@
                         <div class="col-1 col-sm-1">
                             <p class="article__commentsCount">
                                 <!-- $articleCommentsCount -->
-                                ' . $this->getNumberOfMessages($a) . '
+                                ' . $this->getNumberOfMessages($a+1) . '
                             </p>
                         </div>
                         <div class="col-1 col-sm-1">
