@@ -12275,4 +12275,30 @@ a.redirect-topic:link, a.redirect-topic:hover, a.redirect-topic:focus, a.redirec
   align-items: center;
 }
 
+.components__form {
+  margin: 1rem;
+}
+
+.form__heading {
+  font-size: 16px;
+}
+
+.form__label--title, .form__label--body {
+  color: black;
+}
+
+.form__input--title, .form__input--body {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form__input--body {
+  min-height: 10rem;
+}
+
+.invalidFeedback {
+  color: #990000;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=screenTest.css.map */
