@@ -15,5 +15,9 @@ a.redirect-topic{
   &:focus,
   &:visited {
     text-decoration: none !important;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -1,9 +1,5 @@
 <?php
 class Pages extends Controller {
-    public function __construct() {
-        $this->userModel = $this->model('User');
-    }
-
     public function index() {
         $data = [
             'title' => 'Home page'
@@ -38,7 +34,8 @@ class Pages extends Controller {
             'userName' => '',
             'psw' => ''
         ];
-        $this->view('users/login', $data);
+        $this->model('login');
+        $this->view('pages/login', $data);
     }
     public function register() {
         $data = [

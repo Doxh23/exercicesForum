@@ -1,0 +1,24 @@
+.components__form {
+    margin:1rem;
+}
+.form__heading {
+    font-size:$fontSize;
+}
+
+.form__label--title, .form__label--body{
+    color:black;
+}
+
+.form__input--title, .form__input--body {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form__input--body {
+    min-height:10rem;
+}
+
+.invalidFeedback {
+    color:rgb(153, 0, 0);
+    font-weight:bold;
+}

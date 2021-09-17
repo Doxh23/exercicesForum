@@ -79,7 +79,8 @@
 
                                 <div class="toolbar__create col-lg-3 d-flex align-items-center">
                                     <?php if (!empty($_SESSION["username"])): ?>
-                                        <a href="<?=URLROOT?>/posts/create" class="button redirect">New Topic <i class="fas fa-pen"></i></a>
+                                        <?php $boardID = $topics->getBoardId();?>
+                                        <a href="<?=URLROOT?>/posts/create?board=<?php echo $boardID ?>" class="button redirect">New Topic <i class="fas fa-pen"></i></a>
                                     <?php endif; ?>
                                 </div>
 

@@ -31,4 +31,15 @@
 
 .section__article {
     background-color: white;
+    margin: 0.5rem 0;
+    padding: 0;
+    width: 100%;
+}
+
+.description__title{
+    h3{
+        font-size: 1.4rem;
+        margin: 0 0.5rem;
+        padding: 0;
+    }
 }
