@@ -27,12 +27,14 @@ class profil {
 
         $this->db->query("SELECT * FROM users WHERE nickname='$username'");
 
-        $result = $this->db->resultSet();
+        $result = $this->db->single();
         $arrayOfResult = [];
-       
+        $avatar = "https://www.gravatar.com/avatar/".md5($result->email)."?d=identicon";
             
             $template =
             '
+            <img src="'.$avatar.'" alt="avatar" class="avatar">
+
             <form action="" method="post">
             
             <label class="form-control-label" id="username" for="username">Username</label> <br>
