@@ -29,7 +29,7 @@ class Posts extends Controller {
                 'body' =>trim($_POST["body"]),
                 'vues' => 0,
                 'author_id' => $_SESSION["id"],
-                'board_id' => $_GET["board"], // HOW TO MANAGE TO GET BOARD_ID HERE ? ?
+                'board_id' => $_POST["board_id"],
                 'titleError' => '',
                 'bodyError' => ''
             ];
@@ -44,7 +44,7 @@ class Posts extends Controller {
 
             if(empty($data['titleError']) && empty($data['bodyError'])){
                 if ($this->postModel->addPost($data)) {
-                    header("Location: ". URLROOT . "/pages/topics");
+                    header("Location: ". URLROOT . "/pages/categories");
                 } else {
                     die("Something went wrong, please try again");
                 }
@@ -65,10 +65,10 @@ class Posts extends Controller {
 
         if(empty($_SESSION['id'])){
             echo "Your ID is ".$_SESSION['id']." (empty) and you are not connected so you don't have the right to update it.";
-            // header("Location: ". URLROOT . "/pages/topics");
+            // header("Location: ". URLROOT . "/pages/categories");
         } elseif ($post->author_id != $_SESSION['id']){
             echo "Your ID is ".$_SESSION['id']." and it is not your topic so you don't have the right to update it.";
-            // header("Location: ". URLROOT . "/pages/topics");
+            // header("Location: ". URLROOT . "/pages/categories");
         }
 
         $data = [

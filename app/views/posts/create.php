@@ -12,7 +12,7 @@
     <?php require ('../app/views/includes/header.php');?>
     <main>
         <section class="components__form">
-            <h1>Create new topic in board <?php echo $_GET["board_id"] ?></h1> <!-- HOW TO MANAGE TO GET BOARD_ID HERE ? -->
+            <h1>Create new topic in board <?php echo $_GET["board"] ?></h1>
             <form action="<?php echo URLROOT; ?>/posts/create" method="POST">
                 <label for="title">Title of the topic:</label>
                 <br>    
@@ -29,6 +29,7 @@
                 <span class="invalidFeedback">
                     <?php echo $data['bodyError'] ?>
                 </span>
+                <input name="board_id" type="number" style="display:none" value ="<?php echo $_GET["board"] ?>">
                 <br>
                 <button name="submit" type="submit">Submit topic</button>
             </form>
