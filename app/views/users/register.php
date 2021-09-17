@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +10,16 @@
     <title><?=$data['title']?></title>
 </head>
 <body class="rezet">
+    
     <main class="w-100 h-100 bg-transparent">
+    <?php 
+    $mess1 = new register;
+$mess1->getregister();
+?>
         <section class="c-main-login">
             <h1>tracker - login</h1>
             <div class="login__container">
-                <form action="<?php echo URLROOT; ?>/users/register" method="POST">
+                <form action="" method="POST">
                     <div class="form-group">
                         <label class="form-control-label text-muted" for="username">Username</label>
                         <input type="text" id="username" name="username" placeholder="Username" class="form-control rounded-pill">
@@ -46,7 +52,7 @@
                         </span>
                     </div>
                     <div class="row justify-content-center my-3 px-3">
-                        <button class="btn-block btn-color rounded-pill py-2">Log in</button>
+                        <button  name="submit" type="submit" class="btn-block btn-color rounded-pill py-2">Log in
                     </div>
                 </form>
             </div>
